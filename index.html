@@ -1,0 +1,472 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crobot Technologies</title>
+  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- hero style -->
+  <style>
+    @keyframes scroll-up {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+    @keyframes scroll-down {
+      0% { transform: translateY(-50%); }
+      100% { transform: translateY(0); }
+    }
+    .scroll-container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    .scroll-content {
+      display: flex;
+      flex-direction: column;
+    }
+    .scroll-up {
+      animation: scroll-up 40s linear infinite;
+    }
+    .scroll-down {
+      animation: scroll-down 40s linear infinite;
+    }
+    .scroll-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    /* services */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body class="bg-[#242424] text-white">
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+        </div>
+        <div>
+            
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- Menu Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
+      <a href="products.html" class="block px-4 py-2 hover:text-[#E25010]">Products</a>
+      <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
+      <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
+    </div>
+  </nav>
+  <!-- Hero section -->
+  <section class="relative w-full h-screen overflow-hidden flex gap-3">
+    <!-- Column 1 -->
+    <div class="w-1/3 h-full scroll-container">
+      <div class="scroll-content scroll-up gap-3">
+        <!-- Original Images -->
+        <img src="./images/1.jpg" />
+        <img src="./images/2.jpg" />
+        <img src="./images/3.jpg" />
+        <img src="./images/4.jpg" />
+        <!-- Duplicate Images for Infinite Loop -->
+        <img src="./images/1.jpg" />
+        <img src="./images/2.jpg" />
+        <img src="./images/3.jpg" />
+        <img src="./images/4.jpg" />
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="w-1/3 h-full scroll-container">
+      <div class="scroll-content scroll-down gap-3">
+        <img src="./images/5.jpg" />
+        <img src="./images/6.jpg" />
+        <img src="./images/7.jpg" />
+        <img src="./images/8.jpg" />
+        <!-- Duplicate Images -->
+        <img src="./images/5.jpg" />
+        <img src="./images/6.jpg" />
+        <img src="./images/7.jpg" />
+        <img src="./images/8.jpg" />
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="w-1/3 h-full scroll-container">
+      <div class="scroll-content scroll-up gap-3">
+        <img src="./images/9.jpg" />
+        <img src="./images/10.jpg" />
+        <img src="./images/11.jpg" />
+        <img src="./images/12.jpg" />
+        <!-- Duplicate Images -->
+        <img src="./images/9.jpg" />
+        <img src="./images/10.jpg" />
+        <img src="./images/11.jpg" />
+        <img src="./images/12.jpg" />
+      </div>
+    </div>
+
+    <!-- Overlay Banner -->
+    <div class="absolute inset-0 flex flex-col md:items-center justify-center bg-black/40">
+      <h1 class="text-5xl md:text-7xl font-bold text-white p-3 drop-shadow-lg">Crobot Technologies</h1>
+      <h3 class="text-2xl md:text-4xl font-bold text-white pl-4 drop-shadow-lg">We Care We Assist</h3>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="py-16 bg-[#242424] text-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="md:text-4xl text-3xl font-bold mb-4">Our Expertise in Intelligent Robotics</h2>
+      <p class="text-lg mb-12">Empowering businesses with next-gen telepresence robots, AI-driven navigation, and custom robotics software solutions.</p>
+  
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+          <div class="text-5xl mb-4 text-[#E25010]">🤖</div>
+          <h3 class="text-2xl font-semibold mb-2">Telepresence Robots</h3>
+          <p class="mb-4">UBOT & Telebotz provide seamless remote interaction with SLAM navigation, live streaming, and real-time audio/video support.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+          <div class="text-5xl mb-4 text-[#E25010]">🛰️</div>
+          <h3 class="text-2xl font-semibold mb-2">Autonomous Navigation</h3>
+          <p class="mb-4">AI-powered SLAM navigation for path planning, object detection, and industrial automation tasks with precision and safety.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+          <div class="text-5xl mb-4 text-[#E25010]">⚙️</div>
+          <h3 class="text-2xl font-semibold mb-2">Custom Robotics Software</h3>
+          <p class="mb-4">ROS-based frameworks, control applications, and system integrations designed to suit diverse robotic platforms.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+          <div class="text-5xl mb-4 text-[#E25010]">🎓</div>
+          <h3 class="text-2xl font-semibold mb-2">Training & Support</h3>
+          <p class="mb-4">Comprehensive robotics training programs, maintenance support, and workshops to empower your technical teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured -->
+  <section class="py-16 bg-[#242424] text-white">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left: Image Collage -->
+      <div class="grid grid-cols-2 grid-rows-2 gap-4">
+        <img src="./images/1.jpg" alt="Product 1" class="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+        <img src="./images/13.jpg" alt="Product 2" class="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+        <img src="./images/9.jpg" alt="Product 3" class="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+        <img src="./images/15.JPG" alt="Product 4" class="w-full h-32 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      </div>
+  
+      <!-- Right: Content + CTA -->
+      <div class="space-y-6">
+        <h2 class="md:text-4xl text-3xl font-bold">Our Featured Robotics Solutions</h2>
+        <p class="text-lg text-gray-300">
+          Explore our cutting-edge products including UBOT and Telebotz, designed to revolutionize telepresence and automation in various industries.
+        </p>
+        <a href="products.html" class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg transition-colors duration-300">
+          View All Products →
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  <!-- Why Us -->
+  <div class="p-2 text-center" >
+    <h2 class="text-2xl mt-2 font-bold text-[#F16C27]">Why Choose Us?</h2>
+    <h2 class="md:text-4xl text-2xl mt-2 font-bold text-white">we believe in delivering more than just products;</h2>
+    <h2 class="md:text-3xl text-xl mt-2 font-bold text-white">we offer solutions tailored to your unique needs!</h2>
+    <div class="p-10 flex flex-wrap justify-center items-center gap-6" >
+        <div>
+            <img class="h-36" src="./images/robot.png" alt="hosting">
+        </div>
+        <div class="text-left" >
+            <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >GET A TELEBOTZ</h1>
+            <p class="mt-2">Our Telebotz helps you save your energy and expense to travel to important events!</p>
+        </div>
+    </div>
+    <div class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
+        <div class="text-left" >
+            <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >RENT</h1>
+            <p class="mt-2">Easy renting service to enable your distant interactions simple and accessible.</p>
+        </div>
+        <div>
+            <img class="h-36" src="./images/rent-removebg-preview.png" alt="hosting">
+        </div>
+    </div>
+    <div class="p-10 flex flex-wrap justify-center items-center gap-6" >
+        <div>
+            <img class="h-36" src="./images/controller.png" alt="hosting">
+        </div>
+        <div class="text-left" >
+            <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >OPERATE YOUR BOT</h1>
+            <p class="mt-2">Operate your Telebotz from any location with the help of our dedicated webapp. </p>
+        </div>
+    </div>
+    <div class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
+        <div class="text-left" >
+            <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >MAINTENANCE AND REPAIR</h1>
+            <p class="mt-2">We will provide all sorts of maintenance and repair for your Telebotz.</p>
+        </div>
+        <div>
+            <img class="h-36" src="./images/maintenance.png" alt="hosting">
+        </div>
+    </div>
+    <div class="p-10 flex flex-wrap justify-center items-center gap-6" >
+        <div>
+            <img class="h-36" src="./images/feedback.png" alt="hosting">
+        </div>
+        <div class="text-left" >
+            <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >FEEDBACK</h1>
+            <p class="mt-2">We care at most about the feedback that we receive from our customers</p>
+        </div>
+    </div>
+    <div class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
+        <div class="text-left" >
+            <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >BUY SUBSCRIPTION</h1>
+            <p class="mt-2">One simple subscription helps you attend and conduct various events.</p>
+        </div>
+        <div>
+            <img class="h-36" src="./images/subscription.png" alt="hosting">
+        </div>
+    </div>
+ </div>
+ <!-- video -->
+ <section class="py-16 bg-[#1E1E1E] text-white">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left: Video Embed -->
+    <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+      
+      <iframe class="absolute top-0 left-0 w-full h-full rounded-lg" 
+      src="https://www.youtube.com/embed/57GJ5DdCu8o" 
+      title="UBOT Introductory Video from CROBOT Technologies" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Right: Content -->
+    <div class="space-y-6">
+      <h2 class="text-4xl font-bold text-[#E25010]">Introducing UBOT</h2>
+      <p class="text-lg text-gray-300">
+        UBOT is Crobot Technologies’ advanced telepresence robot, designed for seamless remote collaboration, 
+        SLAM-based navigation, real-time audio-video communication, and multi-industry adaptability.
+      </p>
+      <p class="text-gray-400">
+        Watch this quick introduction to understand how UBOT transforms interaction and automation in modern workplaces.
+      </p>
+      <a href="ubot.html" class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg transition-colors duration-300">
+        Learn More About UBOT →
+      </a>
+    </div>
+    
+  </div>
+</section>
+<!-- our highlights -->
+<section id="highlights" class="py-16 bg-[#242424] text-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold mb-12">Our Highlights</h2>
+
+    <!-- Four Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      <!-- 1 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="4" data-plus="">0</h3>
+        <p class="text-gray-300 mt-2">Years of Experience</p>
+      </div>
+      <!-- 2 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="50" data-plus="+">0</h3>
+        <p class="text-gray-300 mt-2">Happy Clients</p>
+      </div>
+      <!-- 3 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="23" data-plus="">0</h3>
+        <p class="text-gray-300 mt-2">Completed Projects</p>
+      </div>
+      <!-- 4 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="100" data-plus="+">0</h3>
+        <p class="text-gray-300 mt-2">Goals</p>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="aboutus.html" class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300">
+      Know More →
+    </a>
+  </div>
+</section>
+<!-- FAQ -->
+<div class="p-2 bg-[#1E1E1E] text-center" >
+  <h2 class="md:text-2xl text-xl mt-2 font-bold text-[#F16C27]">FAQs</h2>
+  <h2 class="md:text-4xl text-3xl mt-2 font-bold text-[#F16C27]">Frequently Asked Questions</h2>
+  <section class="max-w-2xl mx-auto py-10">
+      <div class="space-y-4">
+          <!-- FAQ Item -->
+          <div class="border-b border-gray-300 pb-2">
+              <button class="flex justify-between w-full text-left text-lg font-medium py-2 focus:outline-none faq-toggle">
+                  <span>What is the Difference between web design and web development ?</span>
+                  <span class="text-xl transition-transform">+</span>
+              </button>
+              <p class="hidden text-white text-left mt-2">Web design focuses on the look, feel, and user experience of a website.
+                  Web development involves coding and functionality to make the site work.
+                  Designers use tools like Figma, while developers use HTML, CSS, and JavaScript.
+                  Both work together to create a fully functional and visually appealing website.</p>
+          </div>
+          
+          <!-- FAQ Item -->
+          <div class="border-b border-gray-300 pb-2">
+              <button class="flex justify-between w-full text-left text-lg font-medium py-2 focus:outline-none faq-toggle">
+                  <span>How long does it take to build a website?</span>
+                  <span class="text-xl transition-transform">+</span>
+              </button>
+              <p class="hidden text-white text-left mt-2">The timeline depends on the complexity and features of the website.
+                  A simple website may take 2-4 weeks, while a complex one can take months.
+                  E-commerce sites and web applications require additional time for testing.
+                  We ensure timely delivery while maintaining high quality and performance.</p>
+          </div>
+  
+          <!-- FAQ Item -->
+          <div class="border-b border-gray-300 pb-2">
+              <button class="flex justify-between w-full text-left text-lg font-medium py-2 focus:outline-none faq-toggle">
+                  <span>How much does a website cost?</span>
+                  <span class="text-xl transition-transform">+</span>
+              </button>
+              <p class="hidden text-white text-left mt-2">The cost varies based on design, functionality, and custom features.
+                  A basic website may start at a few hundred dollars, while advanced sites cost more.
+                  E-commerce, API integration, and custom development increase pricing.
+                  We offer affordable solutions tailored to your business needs and budget.</p>
+          </div>
+          <!-- FAQ Item -->
+          <div class="border-b border-gray-300 pb-2">
+              <button class="flex justify-between w-full text-left text-lg font-medium py-2 focus:outline-none faq-toggle">
+                  <span>Do you offer mobile-friendly designs?</span>
+                  <span class="text-xl transition-transform">+</span>
+              </button>
+              <p class="hidden text-white text-left mt-2">Yes, all our websites are fully responsive and work on all devices.
+                  We use mobile-first design principles to ensure a seamless user experience.
+                  The site automatically adjusts to different screen sizes for accessibility.
+                  A mobile-friendly site improves SEO rankings and customer engagement.</p>
+          </div>
+          <!-- FAQ Item -->
+          <div class="border-b border-gray-300 pb-2">
+              <button class="flex justify-between w-full text-left text-lg font-medium py-2 focus:outline-none faq-toggle">
+                  <span>What platforms do you use for website development?</span>
+                  <span class="text-xl transition-transform">+</span>
+              </button>
+              <p class="hidden text-white text-left mt-2">We work with fully custom-built solutions.
+                  For advanced web apps, we use React, Next.js, and Node.js.
+                  Our technology stack is chosen based on performance and scalability.
+                  We recommend the best platform based on your business needs.</p>
+          </div>
+      </div>
+  </section>
+  </div>
+  <!-- get in touch -->
+  <section class="py-12 bg-[#E25010] text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
+      <p class="text-lg mb-6">
+        Let’s discuss how Crobot Technologies can help you implement smart, AI-driven robotic solutions for your industry.
+      </p>
+      <a href="contactus.html" 
+         class="inline-block bg-white text-[#E25010] font-semibold px-8 py-3 rounded-lg text-lg 
+                hover:bg-[#242424] hover:text-white hover:shadow-lg transition-all duration-300">
+        Contact Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+    <!-- segment 1 -->
+    <div class="flex items-center justify-center md:gap-32 gap-10">
+      <!-- logo -->
+    <div class="flex flex-col items-center justify-center" >
+      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <p class="font-semibold">We Care We Assist</p>
+    </div>
+    <!-- quick links -->
+    <div>
+      <h3 class="font-bold text-xl text-[#E25010]">Quick Links</h3>
+      <div class="flex flex-col">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- segment 2 -->
+    <div class="flex md:mt-0 mt-3 items-center justify-center">
+      <!-- contact details -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-xl text-[#E25010]">Contact Details</h3>
+      <div class="flex gap-3 items-center">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+        <p>crobottechservices@gamil.com</p>
+      </div>
+      <div class="flex gap-3" >
+        
+        <p><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i> No: 68, Kadamban Street, 
+          <br>Madurai Shree Meenatchi Nagar,
+          <br> Valasaravakkam, Chennai, 
+          <br>Tamil Nadu, India - 600087.</p>
+      </div>
+    </div>
+    </div>
+    <!-- follow -->
+     <div class="flex flex-col md:mt-0 mt-3 gap-2 items-center">
+      <h3 class="font-bold text-xl text-[#E25010]">Follow Us On</h3>
+      <div>
+        <i class="fa-brands fa-linkedin fa-2xl " style="color: #ffffff;"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+      </div>
+     </div>
+
+   </div>
+   <hr>
+   <div class="text-center p-2">
+    <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
+   </div>
+
+  <script src="index.js" ></script>
+</body>
+</html>

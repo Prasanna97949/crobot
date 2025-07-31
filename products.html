@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crobot Technologies</title>
+  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#242424] text-white">
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+        </div>
+        <div>
+            
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- Menu Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
+      <a href="products.html" class="block px-4 py-2 hover:text-[#E25010]">Products</a>
+      <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
+      <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Products -->
+   <section class="py-16 bg-[#242424] text-white">
+  <div class="max-w-6xl mx-auto px-4 space-y-16">
+    
+    <!-- Product 1 - Ariyan -->
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <img src="./images/3.jpg" alt="Ariyan Robot" class="w-full md:w-1/2 rounded-lg shadow-lg object-cover">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold text-[#E25010]">Ariyan</h2>
+        <p class="text-gray-300">
+          Ariyan is an advanced mobile robotics platform designed by Crobot Technologies for education, 
+          training, and consultancy applications. Powered by a Jetson Orin Nano 8GB processor with 256GB SSD,
+           it delivers strong computing performance for AI-driven tasks. With 360° LiDAR, depth camera,
+            and bumper sensors, Ariyan ensures safe and accurate navigation. Compact yet powerful, 
+            it supports a 10kg payload and runs on ROS 2 with up to 4 hours of battery life.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="ariyan.html" class="bg-[#E25010] hover:bg-orange-800 text-white px-5 py-2 rounded-md transition">Know More</a>
+          <a href="./files/Ariyan.pdf" download class="bg-gray-700 hover:bg-gray-400 text-white px-5 py-2 rounded-md transition">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 - Romos with Hat -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+      <img src="./images/17.jpg" alt="Romos with Hat" class="w-full md:w-1/2 rounded-lg shadow-lg object-cover">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold text-[#E25010]">ROMOS with HAT</h2>
+        <p class="text-gray-300">
+          ROMOS with HAT is a developer-friendly robotics module powered by the 
+          STM32F407VET6 microcontroller, designed for both beginners and enthusiasts.
+           Its compact, industrial-grade build reduces wiring complexity while supporting 
+           custom interface modules or HATs for versatile robotics applications. 
+           The included L298N-based motor driver HAT allows seamless 
+           control of up to four DC motors with a 2A current rating each. 
+           This powerful and expandable platform makes learning, building, 
+           and experimenting with robotics easy and efficient.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="romos.html" class="bg-[#E25010] hover:bg-orange-800 text-white px-5 py-2 rounded-md transition">Know More</a>
+          <a href="./files/ROMOS with HAT.pdf" download class="bg-gray-700 hover:bg-gray-400 text-white px-5 py-2 rounded-md transition">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 - Tulip -->
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <img src="./images/20.jpg" alt="Tulip Robot" class="w-full md:w-1/2 rounded-lg shadow-lg object-cover">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold text-[#E25010]">Tulip</h2>
+        <p class="text-gray-300">
+          Tulip is a compact educational robot designed to make robotics and 
+          coding accessible to students of all ages. With a user-friendly design,
+           powerful computing capabilities, and multiple onboard sensors, Tulip enables hands-on, 
+           experiential learning in classrooms and at home. It supports advanced robotics applications 
+           like obstacle avoidance, line following, and basic mapping, making learning interactive and fun.
+            Small in size but big on performance, Tulip is the perfect tool to spark creativity 
+            and innovation in young minds.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="tulip.html" class="bg-[#E25010] hover:bg-orange-800 text-white px-5 py-2 rounded-md transition">Know More</a>
+          <a href="./files/tulip.pdf" download class="bg-gray-700 hover:bg-gray-400 text-white px-5 py-2 rounded-md transition">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 - UBOT -->
+    <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+      <img src="./images/8.jpg" alt="UBOT Robot" class="w-full md:w-1/2 rounded-lg shadow-lg object-cover">
+      <div class="md:w-1/2 space-y-4">
+        <h2 class="text-3xl font-bold text-[#E25010]">UBOT</h2>
+        <p class="text-gray-300">
+          UBOT is an advanced telepresence companion developed by Crobot Technologies, 
+          designed to enable real-time remote interaction and monitoring. 
+          Powered by NVIDIA Jetson Orin Nano, it delivers high AI performance for 
+          seamless communication and navigation. Equipped with 360° LiDAR, depth cameras, 
+          touch display, and bumper sensors, UBOT ensures safe and intelligent mobility. 
+          Ideal for industrial monitoring, security, healthcare, education, and customer service, 
+          UBOT bridges the gap between virtual presence and real-world engagement.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="ubot.html" class="bg-[#E25010] hover:bg-orange-800 text-white px-5 py-2 rounded-md transition">Know More</a>
+          <a href="./files/UBOT.pdf" download class="bg-gray-700 hover:bg-gray-400 text-white px-5 py-2 rounded-md transition">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+  
+
+  <!-- get in touch -->
+  <section class="py-12 bg-[#E25010] text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
+      <p class="text-lg mb-6">
+        Let’s discuss how Crobot Technologies can help you implement smart, AI-driven robotic solutions for your industry.
+      </p>
+      <a href="contactus.html" 
+         class="inline-block bg-white text-[#E25010] font-semibold px-8 py-3 rounded-lg text-lg 
+                hover:bg-[#242424] hover:text-white hover:shadow-lg transition-all duration-300">
+        Contact Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+    <!-- segment 1 -->
+    <div class="flex items-center justify-center md:gap-32 gap-10">
+      <!-- logo -->
+    <div class="flex flex-col items-center justify-center" >
+      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <p class="font-semibold">We Care We Assist</p>
+    </div>
+    <!-- quick links -->
+    <div>
+      <h3 class="font-bold text-xl text-[#E25010]">Quick Links</h3>
+      <div class="flex flex-col">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- segment 2 -->
+    <div class="flex md:mt-0 mt-3 items-center justify-center">
+      <!-- contact details -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-xl text-[#E25010]">Contact Details</h3>
+      <div class="flex gap-3 items-center">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+        <p>crobottechservices@gamil.com</p>
+      </div>
+      <div class="flex gap-3" >
+        
+        <p><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i> No: 68, Kadamban Street, 
+          <br>Madurai Shree Meenatchi Nagar,
+          <br> Valasaravakkam, Chennai, 
+          <br>Tamil Nadu, India - 600087.</p>
+      </div>
+    </div>
+    </div>
+    <!-- follow -->
+     <div class="flex flex-col md:mt-0 mt-3 gap-2 items-center">
+      <h3 class="font-bold text-xl text-[#E25010]">Follow Us On</h3>
+      <div>
+        <i class="fa-brands fa-linkedin fa-2xl " style="color: #ffffff;"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+      </div>
+     </div>
+
+   </div>
+   <hr>
+   <div class="text-center p-2">
+    <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
+   </div>
+
+  <script src="products.js" ></script>
+</body>
+</html>

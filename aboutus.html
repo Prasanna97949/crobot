@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crobot Technologies</title>
+  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#242424] text-white">
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+        </div>
+        <div>
+            
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- Menu Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
+      <a href="products.html" class="block px-4 py-2 hover:text-[#E25010]">Products</a>
+      <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
+      <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- About us -->
+   <section class="py-16 bg-[#242424] text-white">
+  <div class="max-w-6xl mx-auto px-4 space-y-16">
+
+    <!-- Hero Section -->
+    <div class="text-center space-y-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#E25010]">About Crobot Technologies</h1>
+      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+        Founded in Chennai in 2021, Crobot Technologies is a robotics and automation company dedicated to 
+        developing intelligent, real-world solutions for industries, education, and research. Our mission is 
+        to bridge the gap between people and technology by designing robots that empower businesses and 
+        inspire innovation.
+      </p>
+    </div>
+
+    <!-- Our Story -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <img src="./images/5.jpg" alt="Crobot Team at Work" class="rounded-lg shadow-lg object-cover w-full">
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold text-[#E25010]">Our Story</h2>
+        <p class="text-gray-300">
+          We started Crobot Technologies with a vision to create advanced robotics platforms that solve 
+          real-world challenges in automation, telepresence, and AI-powered navigation. Over the years, 
+          we have delivered cutting-edge products like <b>UBOT, Ariyan, Romos with Hat,</b> and <b>Tulip</b>—each 
+          tailored to meet specific needs in education, research, monitoring, and remote collaboration.
+        </p>
+        <p class="text-gray-300">
+          Our commitment to innovation, precision engineering, and seamless user experience allows us to 
+          design robots that are reliable, scalable, and easy to integrate into different environments.
+        </p>
+      </div>
+    </div>
+
+    <!-- Vision and Mission -->
+    <div class="text-center space-y-6">
+      <h2 class="text-3xl font-semibold text-[#E25010]">Vision & Mission</h2>
+      <p class="text-lg text-gray-300 max-w-4xl mx-auto">
+        Our vision is to make robotics accessible and impactful across industries, transforming the way 
+        people interact with technology. We aim to build robots that not only automate tasks but also 
+        enable smarter decision-making, safer workplaces, and improved communication worldwide.
+      </p>
+    </div>
+
+    <!-- Our Expertise -->
+    <div>
+      <h2 class="text-3xl font-semibold text-center mb-10 text-[#E25010]">Our Expertise</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold mb-2">🤖 Robotics Solutions</h3>
+          <p class="text-gray-300 text-sm">Custom telepresence and automation robots designed for real-world use cases.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold mb-2">🧠 AI Navigation</h3>
+          <p class="text-gray-300 text-sm">SLAM-based navigation, computer vision, and intelligent path planning.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold mb-2">⚙️ Software & ROS</h3>
+          <p class="text-gray-300 text-sm">Expertise in ROS 2, embedded systems, and scalable robotics software integration.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+          <h3 class="text-xl font-semibold mb-2">🎓 Education & Training</h3>
+          <p class="text-gray-300 text-sm">Workshops, developer platforms, and tools for students and researchers worldwide.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- our highlights -->
+<section id="highlights" class="py-16 bg-[#242424] text-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold mb-12">Our Highlights</h2>
+
+    <!-- Four Stats -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+      <!-- 1 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="4" data-plus="">0</h3>
+        <p class="text-gray-300 mt-2">Years of Experience</p>
+      </div>
+      <!-- 2 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="50" data-plus="+">0</h3>
+        <p class="text-gray-300 mt-2">Happy Clients</p>
+      </div>
+      <!-- 3 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="23" data-plus="">0</h3>
+        <p class="text-gray-300 mt-2">Completed Projects</p>
+      </div>
+      <!-- 4 -->
+      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="100" data-plus="+">0</h3>
+        <p class="text-gray-300 mt-2">Goals</p>
+      </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <div class="text-center mt-12">
+      <h3 class="text-2xl font-semibold mb-4">Want to know more about Crobot Technologies?</h3>
+      <a href="contactus.html" class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg transition">
+        Get in Touch →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- get in touch -->
+  <section class="py-12 bg-[#E25010] text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
+      <p class="text-lg mb-6">
+        Let’s discuss how Crobot Technologies can help you implement smart, AI-driven robotic solutions for your industry.
+      </p>
+      <a href="contactus.html" 
+         class="inline-block bg-white text-[#E25010] font-semibold px-8 py-3 rounded-lg text-lg 
+                hover:bg-[#242424] hover:text-white hover:shadow-lg transition-all duration-300">
+        Contact Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+    <!-- segment 1 -->
+    <div class="flex items-center justify-center md:gap-32 gap-10">
+      <!-- logo -->
+    <div class="flex flex-col items-center justify-center" >
+      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <p class="font-semibold">We Care We Assist</p>
+    </div>
+    <!-- quick links -->
+    <div>
+      <h3 class="font-bold text-xl text-[#E25010]">Quick Links</h3>
+      <div class="flex flex-col">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- segment 2 -->
+    <div class="flex md:mt-0 mt-3 items-center justify-center">
+      <!-- contact details -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-xl text-[#E25010]">Contact Details</h3>
+      <div class="flex gap-3 items-center">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+        <p>crobottechservices@gamil.com</p>
+      </div>
+      <div class="flex gap-3" >
+        
+        <p><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i> No: 68, Kadamban Street, 
+          <br>Madurai Shree Meenatchi Nagar,
+          <br> Valasaravakkam, Chennai, 
+          <br>Tamil Nadu, India - 600087.</p>
+      </div>
+    </div>
+    </div>
+    <!-- follow -->
+     <div class="flex flex-col md:mt-0 mt-3 gap-2 items-center">
+      <h3 class="font-bold text-xl text-[#E25010]">Follow Us On</h3>
+      <div>
+        <i class="fa-brands fa-linkedin fa-2xl " style="color: #ffffff;"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+      </div>
+     </div>
+
+   </div>
+   <hr>
+   <div class="text-center p-2">
+    <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
+   </div>
+
+  <script src="aboutus.js" ></script>
+</body>
+</html>

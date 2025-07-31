@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crobot Technologies</title>
+  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#242424] text-white">
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+        </div>
+        <div>
+            
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- Menu Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
+      <a href="products.html" class="block px-4 py-2 hover:text-[#E25010]">Products</a>
+      <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
+      <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
+    </div>
+  </nav>
+<!-- ariyan -->
+ <section class="py-16 bg-[#242424] text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-[#E25010] mb-6">Ariyan</h1>
+    <p class="text-lg text-gray-300 mb-10">
+      Ariyan is an advanced mobile robotics platform designed by Crobot Technologies for education, training, and consultancy applications. 
+      Powered by Jetson Orin Nano 8GB with a 256GB SSD, it delivers robust computing performance for AI-driven research and learning. 
+      Equipped with 360° LiDAR, depth camera, and bumper sensors, Ariyan ensures safe and precise navigation while handling up to 10kg payloads. 
+      Compact, versatile, and efficient, it runs on Ubuntu 22.04 with ROS 2 and offers up to 4 hours of battery life.
+    </p>
+
+    <!-- Images Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <img src="./images/3.jpg" alt="Ariyan Robot" class="w-full rounded-lg shadow-lg object-cover">
+      <img src="./images/7.jpg" alt="Ariyan Features" class="w-full rounded-lg shadow-lg object-cover">
+      <img src="./images/ariyan.jpg" alt="Ariyan Top View" class="w-full rounded-lg shadow-lg object-cover md:col-span-2">
+    </div>
+
+    <!-- Key Specs -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Key Specifications</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>Jetson Orin Nano 8GB with 256GB SSD</li>
+        <li>360° LiDAR with 8m radius and depth camera</li>
+        <li>LFP Battery 24V with 3-4 hours runtime</li>
+        <li>Payload capacity: 10kg | Robot weight: 15kg</li>
+        <li>Ubuntu 22.04 & ROS 2 support</li>
+        <li>Dual speakers, mic, and IMU sensors</li>
+        <li>0.5 m/s maximum speed</li>
+      </ul>
+    </div>
+
+    <!-- Download Brochure Button -->
+    <a href="./files/Ariyan.pdf" download
+       class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300">
+      📄 Download Brochure
+    </a>
+  </div>
+</section>
+  
+
+  <!-- get in touch -->
+  <section class="py-12 bg-[#E25010] text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
+      <p class="text-lg mb-6">
+        Let’s discuss how Crobot Technologies can help you implement smart, AI-driven robotic solutions for your industry.
+      </p>
+      <a href="contactus.html" 
+         class="inline-block bg-white text-[#E25010] font-semibold px-8 py-3 rounded-lg text-lg 
+                hover:bg-[#242424] hover:text-white hover:shadow-lg transition-all duration-300">
+        Contact Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+    <!-- segment 1 -->
+    <div class="flex items-center justify-center md:gap-32 gap-10">
+      <!-- logo -->
+    <div class="flex flex-col items-center justify-center" >
+      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <p class="font-semibold">We Care We Assist</p>
+    </div>
+    <!-- quick links -->
+    <div>
+      <h3 class="font-bold text-xl text-[#E25010]">Quick Links</h3>
+      <div class="flex flex-col">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- segment 2 -->
+    <div class="flex md:mt-0 mt-3 items-center justify-center">
+      <!-- contact details -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-xl text-[#E25010]">Contact Details</h3>
+      <div class="flex gap-3 items-center">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+        <p>crobottechservices@gamil.com</p>
+      </div>
+      <div class="flex gap-3" >
+        
+        <p><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i> No: 68, Kadamban Street, 
+          <br>Madurai Shree Meenatchi Nagar,
+          <br> Valasaravakkam, Chennai, 
+          <br>Tamil Nadu, India - 600087.</p>
+      </div>
+    </div>
+    </div>
+    <!-- follow -->
+     <div class="flex flex-col md:mt-0 mt-3 gap-2 items-center">
+      <h3 class="font-bold text-xl text-[#E25010]">Follow Us On</h3>
+      <div>
+        <i class="fa-brands fa-linkedin fa-2xl " style="color: #ffffff;"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+      </div>
+     </div>
+
+   </div>
+   <hr>
+   <div class="text-center p-2">
+    <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
+   </div>
+
+  <script src="ariyan.js" ></script>
+</body>
+</html>

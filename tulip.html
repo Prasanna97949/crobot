@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crobot Technologies</title>
+  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#242424] text-white">
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+        </div>
+        <div>
+            
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- Menu Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
+      <a href="products.html" class="block px-4 py-2 hover:text-[#E25010]">Products</a>
+      <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
+      <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
+    </div>
+  </nav>
+
+<!-- tulip -->
+ <section class="py-16 bg-[#242424] text-white">
+  <div class="max-w-6xl mx-auto px-4 space-y-12">
+
+    <!-- Top Section: Image and Intro -->
+    <div class="flex flex-col lg:flex-row items-center gap-10">
+      <div class="lg:w-1/2">
+        <img src="./images/6.jpg" alt="Tulip Robot" class="w-full rounded-lg shadow-lg object-cover">
+      </div>
+      <div class="lg:w-1/2 space-y-5">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#E25010]">Tulip</h1>
+        <p class="text-lg text-gray-300">
+          Tulip is a compact educational robot designed to ignite passion for robotics and coding among students of all ages.
+          With its user-friendly design, multiple sensors, and powerful computing capabilities, Tulip makes experiential
+          learning engaging, hands-on, and accessible for schools, colleges, and homes.
+        </p>
+        <a href="./files/tulip.pdf" download 
+           class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg transition-colors duration-300">
+          📄 Download Brochure
+        </a>
+      </div>
+    </div>
+
+    <!-- Middle Section: Key Features in Cards -->
+    <div>
+      <h2 class="text-3xl font-semibold mb-6 text-center">Key Highlights</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Experiential Learning</h3>
+          <p class="text-gray-300 text-sm">
+            Tulip offers interactive, hands-on robotics and coding lessons for students from beginner to advanced levels.
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Multiple Sensors</h3>
+          <p class="text-gray-300 text-sm">
+            Equipped with ultrasonic, infrared, IMU sensors, and optional LiDAR for advanced robotic functionalities.
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Powerful System</h3>
+          <p class="text-gray-300 text-sm">
+            Runs on Raspberry Pi 4 or NVIDIA Jetson with ROS 2 support for real-world robotics applications.
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Educational Focus</h3>
+          <p class="text-gray-300 text-sm">
+            Designed to inspire creativity and innovation, making robotics education accessible to schools and homes alike.
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Programming Capabilities</h3>
+          <p class="text-gray-300 text-sm">
+            Supports obstacle avoidance, maze solving, line following, terrain detection, and remote operation experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Extra Images -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      <img src="./images/20.jpg" alt="Tulip Robot Side View" class="w-full rounded-lg shadow-lg object-cover">
+      <img src="./images/21.jpg" alt="Tulip Robot in Action" class="w-full rounded-lg shadow-lg object-cover">
+    </div>
+
+  </div>
+</section>
+  
+
+  <!-- get in touch -->
+  <section class="py-12 bg-[#E25010] text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
+      <p class="text-lg mb-6">
+        Let’s discuss how Crobot Technologies can help you implement smart, AI-driven robotic solutions for your industry.
+      </p>
+      <a href="contactus.html" 
+         class="inline-block bg-white text-[#E25010] font-semibold px-8 py-3 rounded-lg text-lg 
+                hover:bg-[#242424] hover:text-white hover:shadow-lg transition-all duration-300">
+        Contact Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+    <!-- segment 1 -->
+    <div class="flex items-center justify-center md:gap-32 gap-10">
+      <!-- logo -->
+    <div class="flex flex-col items-center justify-center" >
+      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <p class="font-semibold">We Care We Assist</p>
+    </div>
+    <!-- quick links -->
+    <div>
+      <h3 class="font-bold text-xl text-[#E25010]">Quick Links</h3>
+      <div class="flex flex-col">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- segment 2 -->
+    <div class="flex md:mt-0 mt-3 items-center justify-center">
+      <!-- contact details -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-xl text-[#E25010]">Contact Details</h3>
+      <div class="flex gap-3 items-center">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+        <p>crobottechservices@gamil.com</p>
+      </div>
+      <div class="flex gap-3" >
+        
+        <p><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i> No: 68, Kadamban Street, 
+          <br>Madurai Shree Meenatchi Nagar,
+          <br> Valasaravakkam, Chennai, 
+          <br>Tamil Nadu, India - 600087.</p>
+      </div>
+    </div>
+    </div>
+    <!-- follow -->
+     <div class="flex flex-col md:mt-0 mt-3 gap-2 items-center">
+      <h3 class="font-bold text-xl text-[#E25010]">Follow Us On</h3>
+      <div>
+        <i class="fa-brands fa-linkedin fa-2xl " style="color: #ffffff;"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+      </div>
+     </div>
+
+   </div>
+   <hr>
+   <div class="text-center p-2">
+    <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
+   </div>
+
+  <script src="tulip.js" ></script>
+</body>
+</html>
