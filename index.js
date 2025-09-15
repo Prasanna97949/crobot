@@ -65,3 +65,8 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
   symbol.textContent = answer.classList.contains('hidden') ? '+' : '-';
   });
   });
+  // video effect
+  document.querySelectorAll("video").forEach(video => {
+    video.closest(".group").addEventListener("mouseenter", () => video.play());
+    video.closest(".group").addEventListener("mouseleave", () => video.pause());
+  });
