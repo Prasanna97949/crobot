@@ -7,17 +7,7 @@ const menuBtn = document.getElementById('menu-btn');
     });
 
 // services
-// Fade-in animation on scroll
-const cards = document.querySelectorAll('.p-6');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('animate-fadeIn');
-    }
-  });
-}, { threshold: 0.5 });
 
-cards.forEach(card => observer.observe(card));
 
 // counter animation
 document.addEventListener("DOMContentLoaded", () => {
@@ -70,3 +60,11 @@ document.querySelectorAll('.faq-toggle').forEach(button => {
     video.closest(".group").addEventListener("mouseenter", () => video.play());
     video.closest(".group").addEventListener("mouseleave", () => video.pause());
   });
+
+// Always load page from top
+window.history.scrollRestoration = "manual"; 
+window.scrollTo(0, 0);
+
+  window.addEventListener("load", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

@@ -6,9 +6,19 @@
   <link rel="icon" type="image/x-icon"  href="./images/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- bg img -->
+   <style>
+  body {
+  background: url('./images/bg1.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+</style>
 </head>
-<body class="bg-[#242424] text-white">
+<body class=" text-white">
   <!-- Navbar -->
   <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,13 +61,13 @@
   </nav>
 
   <!-- About us -->
-   <section class="py-16 bg-[#242424] text-white">
+   <section class="py-16  text-white">
   <div class="max-w-6xl mx-auto px-4 space-y-16">
 
     <!-- Hero Section -->
     <div class="text-center space-y-6">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#E25010]">About Crobot Technologies</h1>
-      <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+      <h1 data-aos="zoom-in" data-aos-duration="1500" class="text-4xl md:text-5xl font-bold text-[#E25010]">About Crobot Technologies</h1>
+      <p data-aos="zoom-in" data-aos-duration="1500" class="text-lg text-gray-300 max-w-3xl mx-auto">
         Founded in Chennai in 2021, Crobot Technologies is a robotics and automation company dedicated to 
         developing intelligent, real-world solutions for industries, education, and research. Our mission is 
         to bridge the gap between people and technology by designing robots that empower businesses and 
@@ -85,8 +95,8 @@
 
     <!-- Vision and Mission -->
     <div class="text-center space-y-6">
-      <h2 class="text-3xl font-semibold text-[#E25010]">Vision & Mission</h2>
-      <p class="text-lg text-gray-300 max-w-4xl mx-auto">
+      <h2 data-aos="zoom-in" data-aos-duration="1500" class="text-3xl font-semibold text-[#E25010]">Vision & Mission</h2>
+      <p data-aos="zoom-in" data-aos-duration="1500" class="text-lg text-gray-300 max-w-4xl mx-auto">
         Our vision is to make robotics accessible and impactful across industries, transforming the way 
         people interact with technology. We aim to build robots that not only automate tasks but also 
         enable smarter decision-making, safer workplaces, and improved communication worldwide.
@@ -95,21 +105,29 @@
 
     <!-- Our Expertise -->
     <div>
-      <h2 class="text-3xl font-semibold text-center mb-10 text-[#E25010]">Our Expertise</h2>
+      <h2 data-aos="zoom-in" data-aos-duration="1500" class="text-3xl font-semibold text-center mb-10 text-[#E25010]">Our Expertise</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
           <h3 class="text-xl font-semibold mb-2">🤖 Robotics Solutions</h3>
           <p class="text-gray-300 text-sm">Custom telepresence and automation robots designed for real-world use cases.</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
           <h3 class="text-xl font-semibold mb-2">🧠 AI Navigation</h3>
           <p class="text-gray-300 text-sm">SLAM-based navigation, computer vision, and intelligent path planning.</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
           <h3 class="text-xl font-semibold mb-2">⚙️ Software & ROS</h3>
           <p class="text-gray-300 text-sm">Expertise in ROS 2, embedded systems, and scalable robotics software integration.</p>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition">
           <h3 class="text-xl font-semibold mb-2">🎓 Education & Training</h3>
           <p class="text-gray-300 text-sm">Workshops, developer platforms, and tools for students and researchers worldwide.</p>
         </div>
@@ -117,7 +135,7 @@
     </div>
 
     <!-- our highlights -->
-<section id="highlights" class="py-16 bg-[#242424] text-white">
+<section id="highlights" class="py-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <!-- Heading -->
     <h2 class="text-4xl font-bold mb-12">Our Highlights</h2>
@@ -174,12 +192,12 @@
   </section>
 
   <!-- Footer -->
-   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+   <div class=" p-3 bg-white/10 backdrop-blur-md border border-white/20 gap-6 md:flex items-center justify-around">
     <!-- segment 1 -->
     <div class="flex items-center justify-center md:gap-32 gap-10">
       <!-- logo -->
     <div class="flex flex-col items-center justify-center" >
-      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <img class="w-18 h-16" src="./images/logo.png" alt="logo">
       <p class="font-semibold">We Care We Assist</p>
     </div>
     <!-- quick links -->
@@ -229,5 +247,8 @@
    </div>
 
   <script src="aboutus.js" ></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>

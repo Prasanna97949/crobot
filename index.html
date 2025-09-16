@@ -3,15 +3,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crobot Technologies</title>
-  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="icon" type="image/x-icon"  href="./images/logo1.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- hero style -->
    <style>
   body {
-    background-color: #242424;
-  }
+  background: url('./images/bg1.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
 </style>
   <style>
     @keyframes scroll-up {
@@ -104,11 +108,19 @@
         <img src="./images/2.jpg" alt="error" />
         <img src="./images/3.jpg" alt="error" />
         <img src="./images/4.jpg" alt="error" />
+        <img src="./images/23.jpeg" alt="error" />
+        <img src="./images/24.jpeg" alt="error" />
+        <img src="./images/25.jpeg" alt="error" />
+        <img src="./images/26.jpeg" alt="error" />
         <!-- Duplicate Images for Infinite Loop -->
-        <img src="./images/1.jpg" alt="error" />
+         <img src="./images/1.jpg" alt="error" />
         <img src="./images/2.jpg" alt="error" />
         <img src="./images/3.jpg" alt="error" />
         <img src="./images/4.jpg" alt="error" />
+        <img src="./images/23.jpeg" alt="error" />
+        <img src="./images/24.jpeg" alt="error" />
+        <img src="./images/25.jpeg" alt="error" />
+        <img src="./images/26.jpeg" alt="error" />
       </div>
     </div>
 
@@ -118,12 +130,20 @@
         <img src="./images/5.jpg" alt="error" />
         <img src="./images/6.jpg" alt="error" />
         <img src="./images/7.jpg" alt="error" />
-        <img src="./images/8.jpg" alt="error" />
+        <img src="./images/8.1.jpeg" alt="error" />
+        <img src="./images/27.jpeg" alt="error" />
+        <img src="./images/28.jpeg" alt="error" />
+        <img src="./images/29.jpeg" alt="error" />
+        <img src="./images/30.jpeg" alt="error" />
         <!-- Duplicate Images -->
-        <img src="./images/5.jpg" alt="error" />
+         <img src="./images/5.jpg" alt="error" />
         <img src="./images/6.jpg" alt="error" />
         <img src="./images/7.jpg" alt="error" />
-        <img src="./images/8.jpg" alt="error" />
+        <img src="./images/8.1.jpeg" alt="error" />
+        <img src="./images/27.jpeg" alt="error" />
+        <img src="./images/28.jpeg" alt="error" />
+        <img src="./images/29.jpeg" alt="error" />
+        <img src="./images/30.jpeg" alt="error" />
       </div>
     </div>
 
@@ -134,78 +154,95 @@
         <img src="./images/10.jpg" alt="error" />
         <img src="./images/11.jpg" alt="error" />
         <img src="./images/12.jpg" alt="error" />
+        <img src="./images/31.jpeg" alt="error" />
+        <img src="./images/32.jpeg" alt="error" />
+        <img src="./images/33.jpeg" alt="error" />
+        <img src="./images/34.jpg" alt="error" />
         <!-- Duplicate Images -->
-        <img src="./images/9.jpg" alt="error" />
+         <img src="./images/9.jpg" alt="error" />
         <img src="./images/10.jpg" alt="error" />
         <img src="./images/11.jpg" alt="error" />
         <img src="./images/12.jpg" alt="error" />
+        <img src="./images/31.jpeg" alt="error" />
+        <img src="./images/32.jpeg" alt="error" />
+        <img src="./images/33.jpeg" alt="error" />
+        <img src="./images/34.jpg" alt="error" />
       </div>
     </div>
 
     <!-- Overlay Banner -->
-    <div class="absolute inset-0 flex flex-col md:items-center justify-center bg-black/40">
-      <h1 class="text-5xl md:text-7xl font-bold text-white p-3 drop-shadow-lg">Crobot Technologies</h1>
-      <h3 class="text-2xl md:text-4xl font-bold text-white pl-4 drop-shadow-lg">We Care We Assist</h3>
+    <div  class="absolute inset-0 flex flex-col md:items-center justify-center bg-black/40">
+      <h1 data-aos="fade-right" data-aos-duration="3000" class="text-5xl md:text-7xl font-bold text-white p-3 drop-shadow-lg">Crobot Technologies</h1>
+      <h3 data-aos="fade-left" data-aos-duration="3000" class="text-2xl md:text-4xl font-bold text-white pl-4 drop-shadow-lg">We Care We Assist</h3>
     </div>
   </section>
 
   <!-- Upcoming Product Section -->
-<section class="bg-[#242424] text-white py-20">
-  <div class="max-w-7xl mx-auto px-6">
-    
+
+  <section class="relative mt-10 text-white py-32">
+  <!-- Blurred Background Image -->
+  <div class="absolute inset-0">
+    <img src="./images/34.jpeg" alt="Upcoming Product" 
+         class="w-full h-full object-contain blur-lg opacity-90">
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="relative max-w-4xl mx-auto px-6 text-center space-y-6">
     <!-- Section Heading -->
-    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Upcoming Product</h2>
-    
-    <!-- Content -->
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      
-      <!-- Blurred Image -->
-      <div class="relative">
-        <img src="./images/10.jpg" alt="Upcoming Product" class="w-full h-80 object-cover rounded-xl blur-md">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <span class="text-white text-2xl font-bold bg-black/50 px-4 py-2 rounded-lg">Coming Soon</span>
-        </div>
-      </div>
+    <h2 data-aos="flip-right" data-aos-duration="1500" 
+        class="text-4xl md:text-5xl font-bold">
+      Launching Soon
+    </h2>
 
-      <!-- Text Content -->
-      <div>
-        <h3 class="text-3xl md:text-4xl font-bold mb-4">Our Next Big Innovation</h3>
-        <p class="text-lg text-gray-300">
-          "Revolutionizing the way we interact with intelligent machines, designed to shape the future of robotics."
-        </p>
-      </div>
+    <!-- Subheading -->
+    <h3 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" 
+        class="text-2xl md:text-3xl font-semibold">
+      Our Next Big Innovation
+    </h3>
 
-    </div>
+    <!-- Quote -->
+    <p data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="600" 
+       class="text-lg text-gray-200 max-w-2xl mx-auto">
+      "Revolutionizing the way we interact with intelligent machines, designed to shape the future of robotics."
+    </p>
   </div>
 </section>
 
   <!-- Services -->
-  <section class="py-16 bg-[#242424] text-white">
+  <section class="py-16  text-white">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="md:text-4xl text-3xl font-bold mb-4">Our Expertise in Intelligent Robotics</h2>
-      <p class="text-lg mb-12">Empowering businesses with next-gen telepresence robots, AI-driven navigation, and custom robotics software solutions.</p>
+      <h2 data-aos="zoom-in-up" data-aos-duration="1500" class="md:text-4xl text-3xl font-bold mb-4">Our Expertise in Intelligent Robotics</h2>
+      <p data-aos="zoom-in-up" data-aos-duration="1500" class="text-lg mb-12">Empowering businesses with next-gen telepresence robots, AI-driven navigation, and custom robotics software solutions.</p>
   
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <!-- Card 1 -->
-        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
           <div class="text-5xl mb-4 text-[#E25010]">🤖</div>
           <h3 class="text-2xl font-semibold mb-2">Telepresence Robots</h3>
           <p class="mb-4">UBOT & Telebotz provide seamless remote interaction with SLAM navigation, live streaming, and real-time audio/video support.</p>
         </div>
         <!-- Card 2 -->
-        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
           <div class="text-5xl mb-4 text-[#E25010]">🛰️</div>
           <h3 class="text-2xl font-semibold mb-2">Autonomous Navigation</h3>
           <p class="mb-4">AI-powered SLAM navigation for path planning, object detection, and industrial automation tasks with precision and safety.</p>
         </div>
         <!-- Card 3 -->
-        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
           <div class="text-5xl mb-4 text-[#E25010]">⚙️</div>
           <h3 class="text-2xl font-semibold mb-2">Custom Robotics Software</h3>
           <p class="mb-4">ROS-based frameworks, control applications, and system integrations designed to suit diverse robotic platforms.</p>
         </div>
         <!-- Card 4 -->
-        <div class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-gray-800 rounded-lg hover:shadow-lg transition-transform hover:-translate-y-1 duration-300">
           <div class="text-5xl mb-4 text-[#E25010]">🎓</div>
           <h3 class="text-2xl font-semibold mb-2">Training & Support</h3>
           <p class="mb-4">Comprehensive robotics training programs, maintenance support, and workshops to empower your technical teams.</p>
@@ -214,13 +251,13 @@
     </div>
   </section>
   <!-- product showcase -->
-  <section class="bg-[#242424] text-white py-20">
+  <section class=" text-white py-20">
   <div class="max-w-7xl mx-auto px-6 space-y-20">
 
     <!-- Product 1 -->
      <div class="grid md:grid-cols-2 gap-12 items-center">
   <!-- Video -->
-  <div class="relative group rounded-xl shadow-lg hover:shadow-[#E25010]/60 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+  <div data-aos="fade-down-right" data-aos-duration="2000" class="relative group rounded-xl shadow-lg hover:shadow-[#E25010]/60 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
     <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-xl">
      <iframe class="absolute top-0 left-0 w-full h-full z-30 rounded-xl" 
       src="https://www.youtube.com/embed/JtYJshKU3ds" 
@@ -235,10 +272,10 @@
   </div>
 
   <!-- Content -->
-  <div>
+  <div data-aos="fade-down-up" data-aos-duration="2000" >
     <h3 class="text-3xl font-semibold mb-3">Ariyan</h3>
     <p class="text-gray-300 mb-6">A next-gen ROS2-based research robot built for AI, navigation, and mapping experiments.</p>
-    <a href="ariyan.html" class="bg-[#E25010] hover:bg-orange-600 px-6 py-3 rounded-lg">View Details →</a>
+    <a href="ariyan.html" class="bg-[#E25010] hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl  px-6 py-3 rounded-lg transform hover:-translate-y-1 transition-all duration-300">View Details →</a>
   </div>
 </div>
 
@@ -246,12 +283,12 @@
     <!-- Product 2 (Tulip) -->
 <div class="grid md:grid-cols-2 gap-12 items-center">
   <!-- Content -->
-  <div class="order-2 md:order-1">
+  <div data-aos="fade-down-up" data-aos-duration="2000" class="order-2 md:order-1">
     <h3 class="text-3xl font-semibold mb-3">Tulip</h3>
     <p class="text-gray-300 mb-6">
       A compact educational robot designed to make robotics and coding engaging, hands-on, and accessible.
     </p>
-    <a href="tulip.html" class="bg-[#E25010] hover:bg-orange-600 px-6 py-3 rounded-lg">View Details →</a>
+    <a href="tulip.html" class="bg-[#E25010] hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl px-6 py-3 rounded-lg transform hover:-translate-y-1 transition-all duration-300 ">View Details →</a>
   </div>
 
   <!-- Video -->
@@ -274,10 +311,10 @@
 </section>
   <!-- Why Us -->
   <div class="p-2 text-center" >
-    <h2 class="text-2xl mt-2 font-bold text-[#F16C27]">Why Choose Us?</h2>
-    <h2 class="md:text-4xl text-2xl mt-2 font-bold text-white">we believe in delivering more than just products;</h2>
-    <h2 class="md:text-3xl text-xl mt-2 font-bold text-white">we offer solutions tailored to your unique needs!</h2>
-    <div class="p-10 flex flex-wrap justify-center items-center gap-6" >
+    <h2 data-aos="zoom-in" data-aos-duration="1500" class="text-2xl mt-2 font-bold text-[#F16C27]">Why Choose Us?</h2>
+    <h2 data-aos="zoom-in" data-aos-duration="1500" class="md:text-4xl text-2xl mt-2 font-bold text-white">we believe in delivering more than just products;</h2>
+    <h2 data-aos="zoom-in" data-aos-duration="1500" class="md:text-3xl text-xl mt-2 font-bold text-white">we offer solutions tailored to your unique needs!</h2>
+    <div data-aos="flip-left" data-aos-duration="1500" class="p-10 flex flex-wrap justify-center items-center gap-6" >
         <div>
             <img class="h-36" src="./images/robot.png" alt="hosting">
         </div>
@@ -286,7 +323,7 @@
             <p class="mt-2">Our Telebotz helps you save your energy and expense to travel to important events!</p>
         </div>
     </div>
-    <div class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
+    <div data-aos="flip-right" data-aos-duration="1500" class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
         <div class="text-left" >
             <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >RENT</h1>
             <p class="mt-2">Easy renting service to enable your distant interactions simple and accessible.</p>
@@ -295,7 +332,7 @@
             <img class="h-36" src="./images/rent-removebg-preview.png" alt="hosting">
         </div>
     </div>
-    <div class="p-10 flex flex-wrap justify-center items-center gap-6" >
+    <div data-aos="flip-left" data-aos-duration="1500" class="p-10 flex flex-wrap justify-center items-center gap-6" >
         <div>
             <img class="h-36" src="./images/controller.png" alt="hosting">
         </div>
@@ -304,7 +341,7 @@
             <p class="mt-2">Operate your Telebotz from any location with the help of our dedicated webapp. </p>
         </div>
     </div>
-    <div class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
+    <div data-aos="flip-right" data-aos-duration="1500" class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
         <div class="text-left" >
             <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >MAINTENANCE AND REPAIR</h1>
             <p class="mt-2">We will provide all sorts of maintenance and repair for your Telebotz.</p>
@@ -313,7 +350,7 @@
             <img class="h-36" src="./images/maintenance.png" alt="hosting">
         </div>
     </div>
-    <div class="p-10 flex flex-wrap justify-center items-center gap-6" >
+    <div data-aos="flip-left" data-aos-duration="1500" class="p-10 flex flex-wrap justify-center items-center gap-6" >
         <div>
             <img class="h-36" src="./images/feedback.png" alt="hosting">
         </div>
@@ -322,7 +359,7 @@
             <p class="mt-2">We care at most about the feedback that we receive from our customers</p>
         </div>
     </div>
-    <div class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
+    <div data-aos="flip-right" data-aos-duration="1500" class="p-10 flex flex-wrap-reverse justify-center items-center gap-6" >
         <div class="text-left" >
             <h1 class="text-blue-400 md:text-3xl text-2xl font-semibold" >BUY SUBSCRIPTION</h1>
             <p class="mt-2">One simple subscription helps you attend and conduct various events.</p>
@@ -333,7 +370,7 @@
     </div>
  </div>
  <!-- video -->
- <section class="py-16 bg-[#1E1E1E] text-white">
+ <section class="py-16 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-white">
   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
     
     <!-- Left: Video Embed -->
@@ -359,7 +396,7 @@
       <p class="text-gray-400">
         Watch this quick introduction to understand how UBOT transforms interaction and automation in modern workplaces.
       </p>
-      <a href="ubot.html" class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg transition-colors duration-300">
+      <a href="ubot.html" class="inline-block bg-[#E25010]  text-white px-6 py-3 rounded-lg text-lg hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ">
         Learn More About UBOT →
       </a>
     </div>
@@ -367,43 +404,52 @@
   </div>
 </section>
 <!-- our highlights -->
-<section id="highlights" class="py-16 bg-[#242424] text-white">
-  <div class="max-w-6xl mx-auto px-4 text-center">
+<section id="highlights" class="relative py-16 mt-10 text-white">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="./images/bg2.png" 
+         alt="Highlights Background" 
+         class="w-full h-full object-cover opacity-90">
+  </div>
+
+  <!-- Content -->
+  <div class="relative max-w-6xl mx-auto px-4 text-center">
     <!-- Heading -->
     <h2 class="text-4xl font-bold mb-12">Our Highlights</h2>
 
     <!-- Four Stats -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
       <!-- 1 -->
-      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+      <div class="p-6 bg-gray-800/80 rounded-lg shadow hover:shadow-lg transition">
         <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="4" data-plus="">0</h3>
         <p class="text-gray-300 mt-2">Years of Experience</p>
       </div>
       <!-- 2 -->
-      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+      <div class="p-6 bg-gray-800/80 rounded-lg shadow hover:shadow-lg transition">
         <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="50" data-plus="+">0</h3>
         <p class="text-gray-300 mt-2">Happy Clients</p>
       </div>
       <!-- 3 -->
-      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+      <div class="p-6 bg-gray-800/80 rounded-lg shadow hover:shadow-lg transition">
         <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="23" data-plus="">0</h3>
         <p class="text-gray-300 mt-2">Completed Projects</p>
       </div>
       <!-- 4 -->
-      <div class="p-6 bg-gray-800 rounded-lg shadow hover:shadow-lg transition">
+      <div class="p-6 bg-gray-800/80 rounded-lg shadow hover:shadow-lg transition">
         <h3 class="text-5xl font-bold text-[#E25010] counter" data-target="100" data-plus="+">0</h3>
         <p class="text-gray-300 mt-2">Goals</p>
       </div>
     </div>
 
     <!-- CTA Button -->
-    <a href="aboutus.html" class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300">
+    <a href="aboutus.html" class="inline-block bg-[#E25010] text-white px-8 py-3 rounded-lg text-lg hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
       Know More →
     </a>
   </div>
 </section>
+
 <!-- FAQ -->
-<div class="p-2 bg-[#1E1E1E] text-center" >
+<div class="p-2 mt-10 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl text-center" >
   <h2 class="md:text-2xl text-xl mt-2 font-bold text-[#F16C27]">FAQs</h2>
   <h2 class="md:text-4xl text-3xl mt-2 font-bold text-[#F16C27]">Frequently Asked Questions</h2>
   <section class="max-w-2xl mx-auto py-10">
@@ -469,7 +515,7 @@
   </section>
   </div>
   <!-- get in touch -->
-  <section class="py-12 bg-[#E25010] text-white text-center">
+  <section class="py-12 mt-10 bg-[#E25010] text-white text-center">
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
       <p class="text-lg mb-6">
@@ -484,12 +530,12 @@
   </section>
 
   <!-- Footer -->
-   <div class=" p-3 mt-3 gap-6 md:flex items-center justify-around">
+   <div class=" p-3 bg-white/10 backdrop-blur-md border border-white/20 gap-6 md:flex items-center justify-around">
     <!-- segment 1 -->
     <div class="flex items-center justify-center md:gap-32 gap-10">
       <!-- logo -->
     <div class="flex flex-col items-center justify-center" >
-      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <img class="w-18 h-16" src="./images/logo.png" alt="logo">
       <p class="font-semibold">We Care We Assist</p>
     </div>
     <!-- quick links -->
@@ -537,7 +583,9 @@
    <div class="text-center p-2">
     <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
    </div>
-
   <script src="index.js" ></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>
