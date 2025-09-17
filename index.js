@@ -1,3 +1,7 @@
+// loading
+window.addEventListener("load", () => {
+    document.getElementById("preloader").classList.add("hidden");
+  });
 // nav bar
 const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');

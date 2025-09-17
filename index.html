@@ -11,6 +11,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- hero style -->
   <style>
+    @keyframes spin-slow {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 3s linear infinite; /* Change 3s for speed */
+  }
     body {
   background: url('./images/bg1.png') no-repeat center center fixed;
   background-size: cover;
@@ -57,6 +65,17 @@
 </head>
 
 <body class=" text-white">
+  <!-- Preloader -->
+<div id="preloader" class="fixed inset-0 flex items-center justify-center bg-black z-[9999]">
+  <div class="relative w-32 h-32 flex items-center justify-center">
+    <!-- Your Logo -->
+    <img src="./images/logo.png" alt="Loading..." class=" h-16 w-18 z-10">
+
+    <!-- Dots Ring -->
+    <span class="absolute w-full h-full rounded-full border-4 border-white border-dashed animate-spin-slow"></span>
+  </div>
+</div>
+
   <!-- Navbar -->
   <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
