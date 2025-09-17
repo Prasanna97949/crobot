@@ -1,7 +1,10 @@
 // loading
 window.addEventListener("load", () => {
+  setTimeout(() => {
     document.getElementById("preloader").classList.add("hidden");
-  });
+  }, 2000); // 2000ms = 2 seconds
+});
+
 // nav bar
 const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
