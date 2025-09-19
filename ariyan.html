@@ -6,6 +6,8 @@
   <link rel="icon" type="image/x-icon"  href="./images/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- bg img -->
    <style>
@@ -81,46 +83,366 @@
     </div>
   </nav>
 <!-- ariyan -->
- <section class="py-16 text-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <!-- Title -->
-    <h1 class="text-4xl md:text-5xl font-bold text-[#E25010] mb-6">Ariyan</h1>
-    <p class="text-lg text-gray-300 mb-10">
-      Ariyan is an advanced mobile robotics platform designed by Crobot Technologies for education, training, and consultancy applications. 
-      Powered by Jetson Orin Nano 8GB with a 256GB SSD, it delivers robust computing performance for AI-driven research and learning. 
-      Equipped with 360° LiDAR, depth camera, and bumper sensors, Ariyan ensures safe and precise navigation while handling up to 10kg payloads. 
-      Compact, versatile, and efficient, it runs on Ubuntu 22.04 with ROS 2 and offers up to 4 hours of battery life.
-    </p>
+ <!-- intro -->
+  <section class="py-20  text-white">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-    <!-- Images Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-      <img src="./images/3.jpg" alt="Ariyan Robot" class="w-full rounded-lg shadow-lg object-cover">
-      <img src="./images/7.jpg" alt="Ariyan Features" class="w-full rounded-lg shadow-lg object-cover">
-      <img src="./images/ariyan.jpg" alt="Ariyan Top View" class="w-full rounded-lg shadow-lg object-cover md:col-span-2">
+    <!-- Text Content -->
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 text-[#E25010]">
+        Ariyan
+      </h2>
+      <p class="italic text-lg md:text-xl text-white mb-6">
+        “Shaping Future-Ready Skills with Real-World Robotics”
+      </p>
+      <p class="text-lg text-gray-300 leading-relaxed">
+        The Ariyan Educational Series is a next-generation industrial-grade 
+        Autonomous Mobile Robot (AMR) designed exclusively for skill development, 
+        research, and advanced training. Unlike conventional educational robots, 
+        Ariyan brings <span class="font-semibold text-white">real-world industrial standards</span> 
+        into the classroom and lab, preparing learners for the 
+        <span class="text-[#E25010] font-semibold">future of automation and smart industries</span>.
+      </p>
     </div>
 
-    <!-- Key Specs -->
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
-      <h2 class="text-2xl font-semibold mb-4">Key Specifications</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Jetson Orin Nano 8GB with 256GB SSD</li>
-        <li>360° LiDAR with 8m radius and depth camera</li>
-        <li>LFP Battery 24V with 3-4 hours runtime</li>
-        <li>Payload capacity: 10kg | Robot weight: 15kg</li>
-        <li>Ubuntu 22.04 & ROS 2 support</li>
-        <li>Dual speakers, mic, and IMU sensors</li>
-        <li>0.5 m/s maximum speed</li>
-      </ul>
+    <!-- Video -->
+    <div data-aos="fade-up" data-aos-duration="2000" class="relative rounded-xl overflow-hidden shadow-lg hover:shadow-[#E25010]/50 transition">
+      <div class="relative pb-[56.25%] h-0">
+        <iframe class="absolute top-0 left-0 w-full h-full rounded-xl" 
+      src="https://www.youtube.com/embed/JtYJshKU3ds" 
+      title="ARIYAN" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+      </iframe>
+      </div>
     </div>
 
-    <!-- Download Brochure Button -->
-    <a href="./files/Ariyan.pdf" download
-       class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg transition-colors duration-300">
-      📄 Download Brochure
-    </a>
   </div>
 </section>
-  
+<!-- why choose us -->
+ <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#E25010]">
+      Why Choose Ariyan?
+    </h2>
+
+    <!-- Features -->
+    <div class="flex flex-col gap-8">
+      
+      <!-- Point 1 -->
+      <div data-aos="fade-right" data-aos-duration="2000" 
+           class="flex items-start gap-6 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-industry text-[#E25010] text-4xl"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Industrial-Grade Design</h3>
+          <p class="text-gray-300">
+            Built with the same technology used in modern factories and warehouses, ensuring authentic, hands-on learning.
+          </p>
+        </div>
+      </div>
+
+      <!-- Point 2 -->
+      <div data-aos="fade-left" data-aos-duration="2000"
+           class="flex items-start gap-6 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-user-graduate text-[#E25010] text-4xl"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Skill Development Focus</h3>
+          <p class="text-gray-300">
+            Aligned with Skill India, Industry 4.0, and global education initiatives, Ariyan empowers students with job-ready skills in robotics, AI, and automation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Point 3 -->
+      <div data-aos="fade-right" data-aos-duration="2000"
+           class="flex items-start gap-6 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-puzzle-piece text-[#E25010] text-4xl"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Modular & Customizable</h3>
+          <p class="text-gray-300">
+            From beginner-friendly configurations to advanced research setups, Ariyan can be tailored to match curriculum needs, lab facilities, and student levels.
+          </p>
+        </div>
+      </div>
+
+      <!-- Point 4 -->
+      <div data-aos="fade-left" data-aos-duration="2000"
+           class="flex items-start gap-6 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-briefcase text-[#E25010] text-4xl"></i>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Seamless Industry Transition</h3>
+          <p class="text-gray-300">
+            Trains students with industrial-grade hardware and software, bridging the gap between education and real-world applications.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- key spec -->
+ <section class="py-20  text-white">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="1500" 
+        class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#E25010]">
+      Key Specifications
+    </h2>
+
+    <!-- Specs List -->
+    <div class="flex flex-col gap-6">
+
+      <!-- Spec 1 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-solid fa-microchip text-[#E25010] text-2xl"></i>
+        <p>Jetson Orin Nano 8GB with 256GB SSD</p>
+      </div>
+
+      <!-- Spec 2 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-solid fa-eye text-[#E25010] text-2xl"></i>
+        <p>360° LiDAR with 8m radius and depth camera</p>
+      </div>
+
+      <!-- Spec 3 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-solid fa-battery-full text-[#E25010] text-2xl"></i>
+        <p>LFP Battery 24V with 3-4 hours runtime</p>
+      </div>
+
+      <!-- Spec 4 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-solid fa-weight-hanging text-[#E25010] text-2xl"></i>
+        <p>Payload capacity: 10kg | Robot weight: 15kg</p>
+      </div>
+
+      <!-- Spec 5 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-brands fa-ubuntu text-[#E25010] text-2xl"></i>
+        <p>Ubuntu 22.04 & ROS 2 support</p>
+      </div>
+
+      <!-- Spec 6 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-solid fa-volume-high text-[#E25010] text-2xl"></i>
+        <p>Dual speakers, mic, and IMU sensors</p>
+      </div>
+
+      <!-- Spec 7 -->
+      <div class="flex items-center gap-4 bg-gray-800/70 p-4 rounded-lg shadow hover:shadow-[#E25010]/40 transition">
+        <i class="fa-solid fa-gauge-high text-[#E25010] text-2xl"></i>
+        <p>0.5 m/s maximum speed</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- key features -->
+ <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="1200" 
+        class="text-3xl md:text-4xl font-bold text-center mb-16 text-[#E25010]">
+      Key Features
+    </h2>
+
+    <!-- Features Wrapper -->
+    <div class="space-y-10">
+
+      <!-- Feature Item -->
+      <div class="flex items-start gap-6">
+        <div class="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+          <i class="fa-solid fa-box text-[#E25010] text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Payload Options</h3>
+          <p class="text-gray-300">Light to medium load handling for practical demonstrations</p>
+        </div>
+      </div>
+
+      <!-- Feature Item -->
+      <div class="flex items-start gap-6">
+        <div class="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+          <i class="fa-solid fa-route text-[#E25010] text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Autonomous Navigation</h3>
+          <p class="text-gray-300">Smart sensors with obstacle detection & path planning</p>
+        </div>
+      </div>
+
+      <!-- Feature Item -->
+      <div class="flex items-start gap-6">
+        <div class="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+          <i class="fa-solid fa-cubes text-[#E25010] text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Flexible Configurations</h3>
+          <p class="text-gray-300">Adjustable size and modules for various training levels</p>
+        </div>
+      </div>
+
+      <!-- Feature Item -->
+      <div class="flex items-start gap-6">
+        <div class="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+          <i class="fa-solid fa-code text-[#E25010] text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Open Architecture</h3>
+          <p class="text-gray-300">Supports programming, AI integration, and custom add-ons</p>
+        </div>
+      </div>
+
+      <!-- Feature Item -->
+      <div class="flex items-start gap-6">
+        <div class="flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+          <i class="fa-solid fa-shield-halved text-[#E25010] text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Safe & Reliable</h3>
+          <p class="text-gray-300">Designed for safe indoor use in labs, training centers & institutes</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- who can benifit -->
+ <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="1200" 
+        class="text-3xl md:text-4xl font-bold mb-12 text-[#E25010]">
+      Who Can Benefit?
+    </h2>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Card 1 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col items-center text-center">
+        <i class="fa-solid fa-graduation-cap text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Universities & Engineering Colleges</h3>
+        <p class="text-gray-300">For advanced robotics, AI & automation curriculum</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col items-center text-center">
+        <i class="fa-solid fa-chalkboard-teacher text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Skill Development Institutes</h3>
+        <p class="text-gray-300">To empower students with job-ready industrial skills</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col items-center text-center">
+        <i class="fa-solid fa-flask text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Research Labs</h3>
+        <p class="text-gray-300">For experimentation in AMR technology, AI, and IoT</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col items-center text-center">
+        <i class="fa-solid fa-industry text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Industry Training Centers</h3>
+        <p class="text-gray-300">To upskill workforce in smart manufacturing practices</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- versions -->
+ <section class="py-20 text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="1200" 
+        class="text-3xl md:text-4xl font-bold mb-12 text-[#E25010]">
+      Versions Available
+    </h2>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Card 1 - Basic -->
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl overflow-hidden shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col">
+        <img src="images/10.jpg" alt="Ariyan Basic" class="h-40 w-full object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-semibold mb-2">Ariyan Basic</h3>
+          <p class="text-gray-300">For foundational learning & skill training</p>
+        </div>
+      </div>
+
+      <!-- Card 2 - Intermediate -->
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl overflow-hidden shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col">
+        <img src="images/3.jpg" alt="Ariyan Intermediate" class="h-40 w-full object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-semibold mb-2">Ariyan Intermediate</h3>
+          <p class="text-gray-300">For deeper skill training & mid-level research</p>
+        </div>
+      </div>
+
+      <!-- Card 3 - Advanced -->
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl overflow-hidden shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col">
+        <img src="images/33.jpeg" alt="Ariyan Advanced" class="h-40 w-full object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-semibold mb-2">Ariyan Advanced</h3>
+          <p class="text-gray-300">For research, projects, and industrial simulations</p>
+        </div>
+      </div>
+
+      <!-- Card 4 - Custom Builds -->
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl overflow-hidden shadow hover:shadow-lg hover:shadow-[#E25010]/40 transition flex flex-col">
+        <img src="images/1.jpg" alt="Ariyan Custom Builds" class="h-40 w-full object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-xl font-semibold mb-2">Custom Builds</h3>
+          <p class="text-gray-300">Tailored to your institution’s specific requirements</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- download brochure -->
+ <section class="py-20  text-white">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="1200" 
+        class="text-3xl md:text-4xl font-bold mb-6 text-[#E25010]">
+      Download Brochure
+    </h2>
+
+    <!-- Subtext -->
+    <p class="text-gray-300 mb-8 text-lg">
+      Get detailed insights, technical specifications, and features of the Ariyan Series in our official brochure.
+    </p>
+
+    <!-- Button -->
+    <a href="brochures/ariyan-brochure.pdf" 
+       download
+       class="inline-flex items-center gap-2 bg-[#E25010] text-white px-8 py-3 rounded-lg text-lg font-medium shadow hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+       <i class="fa-solid fa-download"></i>
+       Download PDF
+    </a>
+
+  </div>
+</section>
 
   <!-- get in touch -->
   <section class="py-12 bg-[#E25010] text-white text-center">
@@ -193,5 +515,8 @@
    </div>
 
   <script src="ariyan.js" ></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>

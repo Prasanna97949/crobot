@@ -1,0 +1,442 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crobot Technologies</title>
+  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- bg img -->
+   <style>
+  body {
+  background: url('./images/bg1.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+</style>
+</head>
+<body class=" text-white">
+  <!-- Navbar -->
+    <nav class="sticky top-0 bg-[#1E1E1E] shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 gap-3 flex items-center">
+          <img src="./images/logo.png" alt="Logo" class="h-10 w-auto">
+          <p class="font-bold text-[#E25010] ">Crobot Technologies <br> Private Limited</p>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <div class="relative group">
+  <button class="hover:text-[#E25010] transition focus:outline-none">Products</button>
+  <div class="absolute hidden group-hover:flex flex-col bg-[#1E1E1E] text-white  rounded shadow-lg z-10 transition duration-200">
+    <a href="ariyan.html" class="block px-4 py-2 hover:bg-[#E25010]">Ariyan</a>
+    <a href="romos.html" class="block px-4 py-2 hover:bg-[#E25010]">Romos</a>
+    <a href="tulip.html" class="block px-4 py-2 hover:bg-[#E25010]">Tulip</a>
+    <a href="ubot.html" class="block px-4 py-2 hover:bg-[#E25010]">Ubot</a>
+
+  </div>
+</div>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+        </div>
+        <div>
+            
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-white focus:outline-none">
+            <!-- Menu Icon -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
+      <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
+      
+      <!-- Products Dropdown -->
+      <div class="relative group">
+        <button class="block w-full text-left px-4 py-2 hover:text-[#E25010] transition focus:outline-none">
+          Products
+        </button>
+        <div class="hidden group-hover:flex flex-col bg-[#1E1E1E] text-white mt-1 rounded shadow-lg z-10">
+           <a href="ariyan.html" class="block px-4 py-2 hover:bg-[#E25010]">Ariyan</a>
+    <a href="romos.html" class="block px-4 py-2 hover:bg-[#E25010]">Romos</a>
+    <a href="tulip.html" class="block px-4 py-2 hover:bg-[#E25010]">Tulip</a>
+    <a href="ubot.html" class="block px-4 py-2 hover:bg-[#E25010]">Ubot</a>
+        </div>
+      </div>
+
+      <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
+      <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
+    </div>
+  </nav>
+<!-- AMR -->
+ <!-- intro -->
+  <section class="py-20  text-white">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Text Content -->
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6 text-[#E25010]">
+        Autonomous Mobile Robot (AMR)
+      </h2>
+      <p class="text-lg text-gray-300 leading-relaxed">
+        Our Autonomous Mobile Robot (AMR) is built to transform industrial material handling 
+        with payload capacity ranging from <span class="font-semibold text-white">100 kg</span> 
+        up to <span class="font-semibold text-white">1 ton</span>. 
+        Designed for maximum efficiency, it adapts seamlessly to your unique operational needs.
+      </p>
+    </div>
+
+    <!-- Image -->
+    <div data-aos="fade-up" data-aos-duration="2000" class="relative">
+      <img src="./images/34.jpeg" alt="Autonomous Mobile Robot" 
+           class="w-full h-80 object-cover rounded-xl shadow-lg hover:shadow-[#E25010]/60 hover:shadow-2xl transition duration-300">
+    </div>
+
+  </div>
+</section>
+  <!-- features -->
+   <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-4xl font-bold mb-6 text-[#E25010]">
+      What Makes Our AMR Stand Out ?
+    </h2>
+    <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" 
+       class="text-lg text-gray-300 mb-12">
+      Whether you need compact mobility or heavy-duty transport, our AMR robot is your versatile partner for automation.
+    </p>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      
+      <div data-aos="fade-right" data-aos-duration="2000" 
+           class="flex items-start gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg hover:shadow-lg hover:shadow-[#E25010]/50 transition">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <p class="text-lg">High Payload Options – Multiple versions from 100 kg to 1 ton</p>
+      </div>
+
+      <div data-aos="fade-left" data-aos-duration="2000"
+           class="flex items-start gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg hover:shadow-lg hover:shadow-[#E25010]/50 transition">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <p class="text-lg">Customizable Dimensions – Built to match your floor layout & load requirements</p>
+      </div>
+
+      <div data-aos="fade-right" data-aos-duration="2000"
+           class="flex items-start gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg hover:shadow-lg hover:shadow-[#E25010]/50 transition">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <p class="text-lg">Autonomous Navigation – Smart sensors & AI-powered path planning</p>
+      </div>
+
+      <div data-aos="fade-left" data-aos-duration="2000"
+           class="flex items-start gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg hover:shadow-lg hover:shadow-[#E25010]/50 transition">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <p class="text-lg">Safety & Reliability – Advanced obstacle detection and fail-safe operation</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="2000"
+           class="flex items-start gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg hover:shadow-lg hover:shadow-[#E25010]/50 transition md:col-span-2">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <p class="text-lg">Scalable Solution – Perfect for warehouses, factories, and logistics hubs</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- amr industrial -->
+ <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-5xl font-bold mb-4 text-[#E25010]">
+      AMR Industrial Series – Heavy-Duty Robotics
+    </h2>
+    
+    <!-- Subheading -->
+    <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"
+       class="text-lg md:text-xl text-gray-300 italic mb-8">
+      “Powering Smart Industries with Scalable Mobility”
+    </p>
+
+    <!-- Content -->
+    <p data-aos="zoom-in" data-aos-duration="2500" 
+       class="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+      The AMR Industrial Series represents the next evolution in intelligent material handling. 
+      Built for demanding environments such as <span class="font-semibold text-white">factories, warehouses, and logistics hubs</span>, 
+      these robots bring unmatched <span class="text-[#E25010] font-semibold">precision, safety, and scalability</span>.  
+      From agile mobility for compact operations to heavy-duty transport for large-scale loads, 
+      the AMR Industrial Series is designed to keep your business moving forward efficiently.
+    </p>
+
+  </div>
+</section>
+<!-- why choose us -->
+ <section class="py-20  text-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-4xl font-bold mb-12 text-[#E25010]">
+      Why Choose AMR Industrial Series?
+    </h2>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+
+      <!-- Card 1 -->
+      <div data-aos="zoom-in" data-aos-duration="2000"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/60 transition">
+        <i class="fa-solid fa-dumbbell text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">High Payload Capacity</h3>
+        <p class="text-gray-300">Multiple models available, from 100 kg to 1 ton.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/60 transition">
+        <i class="fa-solid fa-crop-simple text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Customizable Design</h3>
+        <p class="text-gray-300">Robot size and structure tailored to your floor layout & workflow.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/60 transition">
+        <i class="fa-solid fa-brain text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Autonomous Navigation</h3>
+        <p class="text-gray-300">AI-driven mapping, smart sensors, and obstacle avoidance.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/60 transition">
+        <i class="fa-solid fa-shield-halved text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Safe & Reliable</h3>
+        <p class="text-gray-300">Advanced safety protocols for indoor & industrial environments.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/60 transition md:col-span-2 lg:col-span-1">
+        <i class="fa-solid fa-industry text-[#E25010] text-4xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Scalable for Industry 4.0</h3>
+        <p class="text-gray-300">Designed to integrate seamlessly with smart factory systems.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- key features -->
+ <section class="py-20  text-white">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#E25010]">
+      Key Features
+    </h2>
+
+    <!-- Features List -->
+    <ul class="space-y-6 text-lg md:text-xl">
+      <li data-aos="fade-right" data-aos-duration="1500" class="flex items-start gap-3">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <span>Payload Range: <span class="font-semibold">100 kg – 1 ton</span></span>
+      </li>
+
+      <li data-aos="fade-left" data-aos-duration="1500" class="flex items-start gap-3">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <span>Customizable Dimensions: Flexible size & design based on customer requirement</span>
+      </li>
+
+      <li data-aos="fade-right" data-aos-duration="1500" class="flex items-start gap-3">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <span>Navigation: LiDAR, vision systems & AI-based path planning</span>
+      </li>
+
+      <li data-aos="fade-left" data-aos-duration="1500" class="flex items-start gap-3">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <span>Energy Efficiency: Long battery life with fast charging options</span>
+      </li>
+
+      <li data-aos="fade-right" data-aos-duration="1500" class="flex items-start gap-3">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <span>Integration Ready: Compatible with ERP, WMS, and IoT platforms</span>
+      </li>
+
+      <li data-aos="fade-left" data-aos-duration="1500" class="flex items-start gap-3">
+        <span class="text-[#E25010] text-2xl">✅</span>
+        <span>Safety Systems: Obstacle detection, emergency stop, & safe speed control</span>
+      </li>
+    </ul>
+
+  </div>
+</section>
+<!-- who can benifit -->
+ <section class="py-20  text-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-4xl font-bold mb-12 text-[#E25010]">
+      Who Can Benefit?
+    </h2>
+
+    <!-- Benefits Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Card 1 -->
+      <div data-aos="zoom-in" data-aos-duration="2000"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-industry text-[#E25010] text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Factories & Manufacturing</h3>
+        <p class="text-gray-300 text-sm">Material movement between production lines.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-boxes-stacked text-[#E25010] text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Warehouses & Logistics</h3>
+        <p class="text-gray-300 text-sm">Autonomous pallet handling & goods transfer.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-car text-[#E25010] text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Automotive & Heavy Industries</h3>
+        <p class="text-gray-300 text-sm">Safely handling bulky and heavy parts.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600"
+           class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition">
+        <i class="fa-solid fa-microchip text-[#E25010] text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Smart Industries</h3>
+        <p class="text-gray-300 text-sm">Seamless integration into Industry 4.0 ecosystems.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- download brochure -->
+ <section class="py-20  text-white text-center">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <!-- Heading -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" 
+        class="text-3xl md:text-4xl font-bold mb-4 text-[#E25010]">
+      Download Our Brochure
+    </h2>
+
+    <!-- Subheading -->
+    <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" 
+       class="text-lg text-gray-300 mb-8">
+      Get detailed insights about our <span class="font-semibold text-white">AMR Industrial Series</span> — 
+      including specifications, features, and industry applications.
+    </p>
+
+    <!-- Download Button -->
+    <a href="./brochures/amr-brochure.pdf" download
+       data-aos="zoom-in" data-aos-duration="2000"
+       class="inline-flex items-center gap-3 bg-[#E25010] hover:bg-white hover:text-[#E25010] 
+              px-8 py-3 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-[#E25010]/50">
+      <i class="fa-solid fa-file-pdf text-2xl"></i> Download PDF
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- get in touch -->
+  <section class="py-12 bg-[#E25010] text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business with Robotics?</h2>
+      <p class="text-lg mb-6">
+        Let’s discuss how Crobot Technologies can help you implement smart, AI-driven robotic solutions for your industry.
+      </p>
+      <a href="contactus.html" 
+         class="inline-block bg-white text-[#E25010] font-semibold px-8 py-3 rounded-lg text-lg 
+                hover:bg-[#242424] hover:text-white hover:shadow-lg transition-all duration-300">
+        Contact Us →
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <div class=" p-3 bg-white/10 backdrop-blur-md border border-white/20 gap-6 md:flex items-center justify-around">
+    <!-- segment 1 -->
+    <div class="flex items-center justify-center md:gap-32 gap-10">
+      <!-- logo -->
+    <div class="flex flex-col items-center justify-center" >
+      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <p class="font-semibold">We Care We Assist</p>
+    </div>
+    <!-- quick links -->
+    <div>
+      <h3 class="font-bold text-xl text-[#E25010]">Quick Links</h3>
+      <div class="flex flex-col">
+          <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
+          <a href="products.html" class="hover:text-[#E25010] transition">Products</a>
+          <a href="aboutus.html" class="hover:text-[#E25010] transition">About Us</a>
+          <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
+      </div>
+    </div>
+    </div>
+    <!-- segment 2 -->
+    <div class="flex md:mt-0 mt-3 items-center justify-center">
+      <!-- contact details -->
+    <div class="flex flex-col gap-2">
+      <h3 class="font-bold text-xl text-[#E25010]">Contact Details</h3>
+      <div class="flex gap-3 items-center">
+        <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i>
+        <p>crobottechservices@gamil.com</p>
+      </div>
+      <div class="flex gap-3" >
+        
+        <p><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i> No: 68, Kadamban Street, 
+          <br>Madurai Shree Meenatchi Nagar,
+          <br> Valasaravakkam, Chennai, 
+          <br>Tamil Nadu, India - 600087.</p>
+      </div>
+    </div>
+    </div>
+    <!-- follow -->
+     <div class="flex flex-col md:mt-0 mt-3 gap-2 items-center">
+      <h3 class="font-bold text-xl text-[#E25010]">Follow Us On</h3>
+      <div>
+        <i class="fa-brands fa-linkedin fa-2xl " style="color: #ffffff;"></i>
+        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+      </div>
+     </div>
+
+   </div>
+   <hr>
+   <div class="text-center p-2">
+    <p>Copyrights © 2025 Crobot Technologies Pvt. Ltd</p>
+   </div>
+
+  <script src="ariyan.js" ></script>
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>
