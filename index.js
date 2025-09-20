@@ -1,3 +1,13 @@
+// nav location
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(link => {
+  if (link.getAttribute("href") === currentPath) {
+    link.classList.add("text-[#E25010]", "font-bold");
+  }
+});
+
 // loading
 window.addEventListener("load", () => {
   setTimeout(() => {
