@@ -3,9 +3,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crobot Technologies</title>
-  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="icon" type="image/x-icon"  href="./images/logo1.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- bg img -->
    <style>
@@ -88,80 +90,291 @@
     <!-- Top Section: Hero Image or Video -->
     <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
       <!-- Replace with UBOT intro video -->
-      <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
-        src="https://www.youtube.com/embed/57GJ5DdCu8o"
-        title="UBOT Introductory Video from CROBOT Technologies"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+       <iframe class="absolute top-0 left-0 w-full h-full rounded-lg" 
+      src="https://www.youtube.com/embed/bIu_euhaHIA" 
+      title="CROBOT" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+     </iframe>
     </div>
 
     <!-- Intro Paragraph -->
     <div class="text-center max-w-3xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#E25010] mb-6">UBOT</h1>
-      <p class="text-lg text-gray-300">
-        UBOT is an advanced telepresence companion developed by Crobot Technologies to enable real-time 
-        remote interaction and monitoring. Powered by NVIDIA Jetson Orin Nano, it combines AI-driven 
-        navigation, live audio-video streaming, and smart obstacle detection to bring virtual presence 
-        closer to real-world experiences across industries like healthcare, education, security, and 
-        customer service.
+      <h1 data-aos="fade-up" data-aos-duration="2000" class="text-4xl md:text-5xl font-bold text-[#E25010] mb-6">UBOT</h1>
+      <p data-aos="fade-up" data-aos-duration="2000" class="text-lg text-gray-300">
+        Welcome to a new era of seamless connectivity, where UBOT becomes your personal 
+        bridge to any environment—no matter where you are in the world. Designed to shatter
+         barriers of distance, UBOT leverages real-time interaction, robust mobility, 
+         and a user-friendly web based interface to revolutionize the way you communicate and collaborate.
       </p>
     </div>
+    <!-- key features -->
+     <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <!-- Title -->
+    <h2 data-aos="fade-up" data-aos-duration="2000" class="text-4xl font-bold text-center mb-12 text-[#E25010]">Key Features</h2>
 
-    <!-- Key Features Grid -->
-    <div>
-      <h2 class="text-3xl font-semibold mb-6 text-center">Key Highlights</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">High AI Performance</h3>
-          <p class="text-gray-300 text-sm">
-            Powered by Jetson Orin Nano for smooth real-time processing and telepresence capabilities.
-          </p>
+    <!-- Features List -->
+    <div class="space-y-10">
+      
+      <!-- Feature 1 -->
+      <div data-aos="fade-right" data-aos-duration="2000" class="flex items-start gap-6">
+        <div class="text-3xl text-[#E25010]">
+          <i class="fa-solid fa-video"></i>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Smart Navigation</h3>
-          <p class="text-gray-300 text-sm">
-            Equipped with 360° LiDAR, depth cameras, and bumper sensors for safe, autonomous movement.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Interactive Touch Display</h3>
-          <p class="text-gray-300 text-sm">
-            Built-in screen for seamless communication and virtual presence in real-time.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Long Battery Life</h3>
-          <p class="text-gray-300 text-sm">
-            LFP battery pack provides several hours of uninterrupted operation on a single charge.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Multi-Industry Use</h3>
-          <p class="text-gray-300 text-sm">
-            Ideal for security patrols, education sessions, healthcare monitoring, and more.
-          </p>
+        <div>
+          <h3 class="text-xl font-semibold">Real-Time Remote Presence</h3>
+          <p class="text-gray-300">Control UBOT from anywhere via a secure, web-based GUI.</p>
+          <p class="text-gray-300">Two-way audio and video streaming enables immersive, real-time interaction.</p>
         </div>
       </div>
-    </div>
 
-    <!-- Extra Images -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-      <img src="./images/11.jpg" alt="UBOT Side View" class="w-full rounded-lg shadow-lg object-cover">
-      <img src="./images/22.jpg" alt="UBOT in Action" class="w-full rounded-lg shadow-lg object-cover">
-    </div>
+      <!-- Feature 2 -->
+      <div data-aos="fade-left" data-aos-duration="2000" class="flex items-start gap-6">
+        <div class="text-3xl text-[#E25010]">
+          <i class="fa-solid fa-display"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Intuitive Web-Based GUI</h3>
+          <p class="text-gray-300">A customized, user-friendly dashboard for controlling UBOT’s movements, camera angles, and communication tools.</p>
+          <p class="text-gray-300">Minimal setup required—access from your laptop, tablet, or smartphone.</p>
+        </div>
+      </div>
 
-    <!-- Download Brochure Button -->
-    <div class="text-center">
-      <a href="./files/UBOT.pdf" download
-        class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-8 py-3 rounded-lg text-lg mt-8 transition-colors duration-300">
-        📄 Download Brochure
-      </a>
-    </div>
+      <!-- Feature 3 -->
+      <div data-aos="fade-right" data-aos-duration="2000" class="flex items-start gap-6">
+        <div class="text-3xl text-[#E25010]">
+          <i class="fa-solid fa-arrows-to-dot"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Versatile Mobility</h3>
+          <p class="text-gray-300">Effortlessly navigate through various indoor environments such as hospitals, offices, and retail spaces.</p>
+          <p class="text-gray-300">Stable design for smooth movement and easy maneuverability in tight spaces.</p>
+        </div>
+      </div>
 
+      <!-- Feature 4 -->
+      <div data-aos="fade-left" data-aos-duration="2000" class="flex items-start gap-6">
+        <div class="text-3xl text-[#E25010]">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Multi-Use Functionality</h3>
+          <p class="text-gray-300">Built-in sensors and camera system for surveillance, consulting, remote monitoring, and more.</p>
+          <p class="text-gray-300">Adaptable to different industries—healthcare, education, security, corporate, and beyond.</p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div data-aos="fade-right" data-aos-duration="2000" class="flex items-start gap-6">
+        <div class="text-3xl text-[#E25010]">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Scalable & Secure</h3>
+          <p class="text-gray-300">End-to-end encryption and secure data handling for sensitive interactions.</p>
+          <p class="text-gray-300">Easily integrate with existing communication systems for larger-scale deployments.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
+  </div>
+</section>
+<!-- key benifits -->
+<section class="py-16 text-white ">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 data-aos="fade-up" data-aos-duration="2000" class="text-4xl font-bold mb-10 text-[#E25010]">Key Benefits</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Benefit 1 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-1 duration-300">
+        <div class="text-5xl mb-4">✈️</div>
+        <h3 class="text-xl font-semibold mb-2">Reduced Travel Costs & Time</h3>
+        <p class="text-gray-300">
+          Eliminate on-site visits and reduce travel expenses, delays, and scheduling conflicts.
+        </p>
+      </div>
+
+      <!-- Benefit 2 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-1 duration-300">
+        <div class="text-5xl mb-4">🤝</div>
+        <h3 class="text-xl font-semibold mb-2">Enhanced Collaboration</h3>
+        <p class="text-gray-300">
+          Engage with teams, clients, or patients in real time—no matter the distance.
+        </p>
+      </div>
+
+      <!-- Benefit 3 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-1 duration-300">
+        <div class="text-5xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold mb-2">Improved Efficiency</h3>
+        <p class="text-gray-300">
+          Monitor multiple sites or consultations simultaneously from a single location.
+        </p>
+      </div>
+
+      <!-- Benefit 4 -->
+      <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-1 duration-300">
+        <div class="text-5xl mb-4">📈</div>
+        <h3 class="text-xl font-semibold mb-2">High ROI</h3>
+        <p class="text-gray-300">
+          Boost productivity while cutting overhead costs tied to in-person meetings.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- who can benifit -->
+ <section class="py-16 text-white ">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 data-aos="fade-up" data-aos-duration="2000" class="text-4xl font-bold mb-10 text-[#E25010]">Where UBOT Can Be Used</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Education -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🎓</div>
+        <h3 class="text-xl font-semibold mb-2">Education & Training</h3>
+        <p class="text-gray-300">Schools, universities, training centers, and research labs.</p>
+      </div>
+
+      <!-- Corporate -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🏢</div>
+        <h3 class="text-xl font-semibold mb-2">Corporate Collaboration</h3>
+        <p class="text-gray-300">Offices, boardrooms, and co-working spaces.</p>
+      </div>
+
+      <!-- Retail -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🛍️</div>
+        <h3 class="text-xl font-semibold mb-2">Retail Engagement</h3>
+        <p class="text-gray-300">Stores, malls, showrooms, and service centers.</p>
+      </div>
+
+      <!-- Real Estate -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🏨</div>
+        <h3 class="text-xl font-semibold mb-2">Real Estate & Hospitality</h3>
+        <p class="text-gray-300">Properties, hotels, resorts, and event venues.</p>
+      </div>
+
+      <!-- Manufacturing -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🏭</div>
+        <h3 class="text-xl font-semibold mb-2">Manufacturing Oversight</h3>
+        <p class="text-gray-300">Factories, warehouses, and assembly lines.</p>
+      </div>
+
+      <!-- Tourism -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🎟️</div>
+        <h3 class="text-xl font-semibold mb-2">Tourism & Entertainment</h3>
+        <p class="text-gray-300">Museums, galleries, parks, and concert venues.</p>
+      </div>
+
+      <!-- Events -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🎤</div>
+        <h3 class="text-xl font-semibold mb-2">Events & Conferences</h3>
+        <p class="text-gray-300">Expos, trade shows, and product launches.</p>
+      </div>
+
+      <!-- Healthcare -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🏥</div>
+        <h3 class="text-xl font-semibold mb-2">Hospitals & Healthcare</h3>
+        <p class="text-gray-300">ICUs, emergency rooms, clinics, and elderly care.</p>
+      </div>
+
+      <!-- Security -->
+      <div data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg hover:shadow-[#E25010]/60 transition hover:-translate-y-1 duration-300">
+        <div class="text-4xl mb-3">🛡️</div>
+        <h3 class="text-xl font-semibold mb-2">Surveillance & Security</h3>
+        <p class="text-gray-300">Offices, warehouses, public spaces, and critical zones.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Tech Spec -->
+ <section class="py-16 text-white ">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 data-aos="fade-up" data-aos-duration="2000" class="text-4xl font-bold text-center mb-10 text-[#E25010]">Technical Specifications of UBOT</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full table-auto border-collapse bg-gray-900 rounded-lg shadow-lg">
+        <tbody class="text-left text-gray-300 divide-y divide-gray-700">
+          <tr><td class="py-3 px-4 font-semibold text-white">Weight</td><td class="py-3 px-4">35 kgs (approx)</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Speed</td><td class="py-3 px-4">1.1 m/s max, capped at 0.7 m/s for safety</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Drive</td><td class="py-3 px-4">24 V BLDC motors – 2 nos</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Payload</td><td class="py-3 px-4">40 kg max</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Display Screen Type</td><td class="py-3 px-4">Capacitive touch</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Screen Resolution</td><td class="py-3 px-4">1280 × 800 pixels</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Screen Size</td><td class="py-3 px-4">10.1 inches</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Audio</td><td class="py-3 px-4">5 watts speaker</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Camera</td><td class="py-3 px-4">5MP and USB2.0 camera module</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Battery</td><td class="py-3 px-4">24 V, 30 AH LFP with smart BMS</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Duration</td><td class="py-3 px-4">Supports 8 hours of operation</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Charging Time</td><td class="py-3 px-4">5–6 hours</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">2D Scanner</td><td class="py-3 px-4">12m range scanning LiDAR</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">3D Scanner</td><td class="py-3 px-4">Global Shutter, 10m range, 1280×720 stereo depth, 90fps</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Processor</td><td class="py-3 px-4">NVIDIA Jetson Orin Nano, 8GB RAM</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Operating System</td><td class="py-3 px-4">Ubuntu 22.04 (ROS2)</td></tr>
+          <tr><td class="py-3 px-4 font-semibold text-white">Size</td><td class="py-3 px-4">1.8 ft diameter, 4.5 ft height</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- download brochure -->
+ <section class="py-16 text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-4 text-[#E25010]">Download UBOT Brochure</h2>
+    <p class="text-lg text-gray-300 mb-6">
+      Get detailed insights into UBOT’s features, specifications, and use cases. Perfect for presentations, client pitches, and internal reviews.
+    </p>
+    <a href="ubot-brochure.pdf" download
+       class="inline-block bg-[#E25010] text-white font-semibold px-8 py-3 rounded-lg text-lg
+              hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl
+              transform hover:-translate-y-1 transition-all duration-300">
+      📥 Download Brochure
+    </a>
+  </div>
+</section>
+
+
+
   
 
   <!-- get in touch -->
@@ -185,7 +398,7 @@
     <div class="flex items-center justify-center md:gap-32 gap-10">
       <!-- logo -->
     <div class="flex flex-col items-center justify-center" >
-      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <img class="w-18 h-16" src="./images/logo.png" alt="logo">
       <p class="font-semibold">We Care We Assist</p>
     </div>
     <!-- quick links -->
@@ -235,5 +448,8 @@
    </div>
 
   <script src="ubot.js" ></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>

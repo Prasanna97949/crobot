@@ -3,9 +3,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crobot Technologies</title>
-  <link rel="icon" type="image/x-icon"  href="./images/logo.png">
+  <link rel="icon" type="image/x-icon"  href="./images/logo1.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- bg img -->
    <style>
@@ -82,74 +84,224 @@
   </nav>
 
 <!-- tulip -->
- <section class="py-16  text-white">
-  <div class="max-w-6xl mx-auto px-4 space-y-12">
+ <!-- intro -->
+  <section class="py-20  text-white">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
 
-    <!-- Top Section: Image and Intro -->
-    <div class="flex flex-col lg:flex-row items-center gap-10">
-      <div class="lg:w-1/2">
-        <img src="./images/6.jpg" alt="Tulip Robot" class="w-full rounded-lg shadow-lg object-cover">
+    <!-- Left: Video -->
+    <div data-aos="fade-up" data-aos-duration="2000" class="w-full md:w-1/2 relative rounded-xl overflow-hidden shadow-lg group">
+      <div class="relative pb-[56.25%] h-0">
+        <iframe class="absolute top-0 left-0 w-full h-full rounded-xl" 
+      src="https://www.youtube.com/embed/dx1T7AzzlbM" 
+      title="CROBOT" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
       </div>
-      <div class="lg:w-1/2 space-y-5">
-        <h1 class="text-4xl md:text-5xl font-bold text-[#E25010]">Tulip</h1>
-        <p class="text-lg text-gray-300">
-          Tulip is a compact educational robot designed to ignite passion for robotics and coding among students of all ages.
-          With its user-friendly design, multiple sensors, and powerful computing capabilities, Tulip makes experiential
-          learning engaging, hands-on, and accessible for schools, colleges, and homes.
-        </p>
-        <a href="./files/tulip.pdf" download 
-           class="inline-block bg-[#E25010] hover:bg-orange-600 text-white px-6 py-3 rounded-lg text-lg transition-colors duration-300">
-          📄 Download Brochure
-        </a>
-      </div>
+      <!-- Hover Glow -->
+      <div class="absolute inset-0 border-2 border-transparent group-hover:border-[#E25010]/60 transition-all duration-300 rounded-xl"></div>
     </div>
 
-    <!-- Middle Section: Key Features in Cards -->
-    <div>
-      <h2 class="text-3xl font-semibold mb-6 text-center">Key Highlights</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Experiential Learning</h3>
-          <p class="text-gray-300 text-sm">
-            Tulip offers interactive, hands-on robotics and coding lessons for students from beginner to advanced levels.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Multiple Sensors</h3>
-          <p class="text-gray-300 text-sm">
-            Equipped with ultrasonic, infrared, IMU sensors, and optional LiDAR for advanced robotic functionalities.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Powerful System</h3>
-          <p class="text-gray-300 text-sm">
-            Runs on Raspberry Pi 4 or NVIDIA Jetson with ROS 2 support for real-world robotics applications.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Educational Focus</h3>
-          <p class="text-gray-300 text-sm">
-            Designed to inspire creativity and innovation, making robotics education accessible to schools and homes alike.
-          </p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#E25010]">Programming Capabilities</h3>
-          <p class="text-gray-300 text-sm">
-            Supports obstacle avoidance, maze solving, line following, terrain detection, and remote operation experiments.
-          </p>
-        </div>
-      </div>
+    <!-- Right: Content -->
+    <div data-aos="fade-up" data-aos-duration="2000" class="w-full md:w-1/2 space-y-6">
+      <h2 class="text-4xl font-bold text-[#E25010]">Tulip</h2>
+      <h3 class="text-xl italic text-gray-300">“ Building Strong Foundations in Robotics & Automation “</h3>
+      <p class="text-gray-200 leading-relaxed bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg shadow-md">
+        The <span class="text-[#0FB2E1] font-semibold">Tulip Educational Robot</span> is designed as a beginner-friendly, hands-on learning platform 
+        for students who are just starting their journey into robotics, AI, and automation.
+        Unlike <span class="text-[#F16C27] font-semibold">Ariyan</span>, which focuses on industrial-grade training, Tulip is a compact 
+        learning kit that encourages students to assemble, program, and experiment—making learning fun and engaging.
+      </p>
     </div>
+    
+  </div>
+</section>
+  <!-- why choose us -->
+   <section class="py-20 text-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    
+    <!-- Title -->
+    <h2 class="text-4xl font-bold mb-12 text-[#E25010]">Why Choose Tulip?</h2>
 
-    <!-- Bottom Section: Extra Images -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-      <img src="./images/20.jpg" alt="Tulip Robot Side View" class="w-full rounded-lg shadow-lg object-cover">
-      <img src="./images/21.jpg" alt="Tulip Robot in Action" class="w-full rounded-lg shadow-lg object-cover">
+    <!-- Cards -->
+    <div class="flex flex-wrap justify-center gap-8">
+      
+      <!-- Card 1 -->
+      <div class="w-full sm:w-64 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4">🤲</div>
+        <h3 class="text-xl font-semibold mb-2">Hands-On Learning</h3>
+        <p class="text-gray-300">Students learn by assembling and operating the robot themselves.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full sm:w-64 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4">🎓</div>
+        <h3 class="text-xl font-semibold mb-2">Foundation Skill Development</h3>
+        <p class="text-gray-300">Perfect for introducing robotics & automation concepts at an early stage.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full sm:w-64 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4">💡</div>
+        <h3 class="text-xl font-semibold mb-2">Affordable & Scalable</h3>
+        <p class="text-gray-300">Easy adoption for schools, training centers, and hobby learners.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-full sm:w-64 p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-md hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4">🚀</div>
+        <h3 class="text-xl font-semibold mb-2">Expand Knowledge</h3>
+        <p class="text-gray-300">Acts as a stepping stone towards advanced platforms like Ariyan.</p>
+      </div>
+
     </div>
+  </div>
+</section>
+<!-- key features -->
+ <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-center mb-12 text-[#E25010]">Key Features</h2>
+
+    <!-- Features -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300 text-center">
+        <div class="text-4xl mb-3">🛠️</div>
+        <h3 class="text-xl font-semibold mb-2">Tinker Kit</h3>
+        <p class="text-gray-300">Promotes Do-It-Yourself learning and creativity.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300 text-center">
+        <div class="text-4xl mb-3">📦</div>
+        <h3 class="text-xl font-semibold mb-2">Compact & Lightweight</h3>
+        <p class="text-gray-300">Easy to handle and perfectly suited for classrooms.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300 text-center">
+        <div class="text-4xl mb-3">💻</div>
+        <h3 class="text-xl font-semibold mb-2">Beginner-Friendly Coding</h3>
+        <p class="text-gray-300">Supports block-based & simple programming.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow hover:shadow-[#E25010]/50 transition-transform hover:-translate-y-2 duration-300 text-center">
+        <div class="text-4xl mb-3">🛡️</div>
+        <h3 class="text-xl font-semibold mb-2">Safe Design</h3>
+        <p class="text-gray-300">Engineered for students and entry-level courses.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- who can benifit -->
+ <section class="py-20  text-white">
+  <div class="max-w-4xl mx-auto px-6">
+    
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-center mb-12 text-[#E25010]">Who Can Benefit?</h2>
+
+    <!-- Timeline Style List -->
+    <div class="space-y-10 relative border-l-4 border-[#E25010] pl-6">
+      
+      <!-- Item 1 -->
+      <div class="relative">
+        <span class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-[#E25010] flex items-center justify-center">
+          <i class="fa-solid fa-university text-white text-sm"></i>
+        </span>
+        <h3 class="text-xl font-semibold">Universities & Colleges</h3>
+        <p class="text-gray-300">Introduce automation & robotics early into academic programs.</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="relative">
+        <span class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-[#E25010] flex items-center justify-center">
+          <i class="fa-solid fa-chalkboard-teacher text-white text-sm"></i>
+        </span>
+        <h3 class="text-xl font-semibold">Skill Development Centers</h3>
+        <p class="text-gray-300">Provide a foundation kit for students before moving to advanced robots.</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="relative">
+        <span class="absolute -left-10 top-1 w-8 h-8 rounded-full bg-[#E25010] flex items-center justify-center">
+          <i class="fa-solid fa-flask text-white text-sm"></i>
+        </span>
+        <h3 class="text-xl font-semibold">STEM Labs</h3>
+        <p class="text-gray-300">Hands-on workshops and innovation projects for students.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- versions -->
+ <section class="py-20  text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    
+    <!-- Title -->
+    <h2 class="text-4xl font-bold mb-12 text-[#E25010]">Versions Available</h2>
+
+    <!-- Versions Row -->
+    <div class="flex flex-col md:flex-row justify-center gap-8">
+      
+      <!-- Basic Kit -->
+      <div class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl shadow hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4 text-[#E25010]">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Tulip Basic Kit</h3>
+        <p class="text-gray-300">Perfect for entry-level robotics introduction and foundation learning.</p>
+      </div>
+
+      <!-- Intermediate Kit -->
+      <div class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl shadow hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4 text-[#E25010]">
+          <i class="fa-solid fa-cubes"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Tulip Intermediate Kit</h3>
+        <p class="text-gray-300">Balanced for secondary education & STEM labs, bridging basics and advanced robotics.</p>
+      </div>
+
+      <!-- Advanced Kit -->
+      <div class="flex-1 bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-xl shadow hover:shadow-[#E25010]/60 transition-transform hover:-translate-y-2 duration-300">
+        <div class="text-5xl mb-4 text-[#E25010]">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2">Tulip Advanced Kit</h3>
+        <p class="text-gray-300">Ideal for higher education, advanced projects, and industrial-grade training.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- download brochure -->
+ <section class="py-20  text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold mb-6 text-[#E25010]">Download Brochure</h2>
+    <p class="text-gray-300 mb-8">
+      Get the complete details of Tulip Educational Robot, including specifications, 
+      versions, and learning benefits in one place.
+    </p>
+
+    <!-- Download Button -->
+    <a href="brochures/tulip-brochure.pdf" download
+       class="inline-flex items-center gap-3 bg-[#E25010] text-white px-8 py-4 rounded-lg text-lg font-semibold
+              hover:bg-white hover:text-black hover:shadow-[#E25010]/60 hover:shadow-2xl 
+              transform hover:-translate-y-1 transition-all duration-300">
+      <i class="fa-solid fa-file-pdf text-2xl"></i>
+      Download PDF
+    </a>
 
   </div>
 </section>
-  
 
   <!-- get in touch -->
   <section class="py-12 bg-[#E25010] text-white text-center">
@@ -172,7 +324,7 @@
     <div class="flex items-center justify-center md:gap-32 gap-10">
       <!-- logo -->
     <div class="flex flex-col items-center justify-center" >
-      <img class="w-16 h-16" src="./images/logo.png" alt="logo">
+      <img class="w-18 h-16" src="./images/logo.png" alt="logo">
       <p class="font-semibold">We Care We Assist</p>
     </div>
     <!-- quick links -->
@@ -222,5 +374,8 @@
    </div>
 
   <script src="tulip.js" ></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>
