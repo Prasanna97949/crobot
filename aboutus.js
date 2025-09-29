@@ -51,3 +51,17 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(highlightsSection);
   }
 });
+
+// Toggle submenus in mobile
+  function toggleMenu(menu) {
+    const submenu = document.getElementById("submenu-" + menu);
+    const icon = document.getElementById("icon-" + menu);
+
+    submenu.classList.toggle("hidden");
+    icon.textContent = submenu.classList.contains("hidden") ? "+" : "-";
+  }
+
+  // Toggle entire products dropdown (if needed)
+  document.getElementById("mobile-products-btn").addEventListener("click", () => {
+    document.getElementById("mobile-products-menu").classList.toggle("hidden");
+  });

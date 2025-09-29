@@ -32,17 +32,53 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8 items-center">
           <a href="index.html" class="hover:text-[#E25010] transition">Home</a>
-          <div class="relative group">
-  <button class="hover:text-[#E25010] transition focus:outline-none">Products</button>
-  <div class="absolute hidden group-hover:flex flex-col bg-[#1E1E1E] text-white  rounded shadow-lg z-10 transition duration-200">
-    <a href="AMR.html" class="block px-4 py-2 hover:bg-[#E25010]">AMR</a>
-    <a href="ariyan.html" class="block px-4 py-2 hover:bg-[#E25010]">Ariyan</a>
-    <a href="romos.html" class="block px-4 py-2 hover:bg-[#E25010]">Romos</a>
-    <a href="tulip.html" class="block px-4 py-2 hover:bg-[#E25010]">Tulip</a>
-    <a href="ubot.html" class="block px-4 py-2 hover:bg-[#E25010]">Ubot</a>
+           <!-- product menu -->
+
+<div class="relative group inline-block">
+  <!-- Products Button -->
+  <button class="hover:text-[#E25010] transition focus:outline-none">
+    Products
+  </button>
+
+  <!-- First Level Dropdown -->
+  <div
+    class="absolute left-0 top-full opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none
+           transition-opacity duration-300 bg-[#1E1E1E] text-white rounded shadow-lg z-10 min-w-[180px] p-2">
+    
+    <!-- Industrial Series -->
+    <div class="relative group/item">
+      <button class="block px-4 py-2 text-left hover:bg-[#E25010] w-full">
+        Industrial Series
+      </button>
+      <!-- Submenu -->
+      <div
+        class="absolute top-0 left-full opacity-0 group-hover/item:opacity-100 group-hover/item:pointer-events-auto pointer-events-none
+               transition-opacity duration-300 bg-[#1E1E1E] rounded shadow-lg min-w-[160px] p-2">
+               <a href="AMR.html" class="block px-4 py-2 hover:bg-[#E25010]">AMR</a>
+               <a href="ubot.html" class="block px-4 py-2 hover:bg-[#E25010]">Ubot</a>
+        
+      </div>
+    </div>
+
+    <!-- Educational Series -->
+    <div class="relative group/item">
+      <button class="block px-4 py-2 text-left hover:bg-[#E25010] w-full">
+        Educational Series
+      </button>
+      <!-- Submenu -->
+      <div
+        class="absolute top-0 left-full opacity-0 group-hover/item:opacity-100 group-hover/item:pointer-events-auto pointer-events-none
+               transition-opacity duration-300 bg-[#1E1E1E] rounded shadow-lg min-w-[160px] p-2">
+        <a href="ariyan.html" class="block px-4 py-2 hover:bg-[#E25010]">Ariyan</a>
+        <a href="tulip.html" class="block px-4 py-2 hover:bg-[#E25010]">Tulip</a>
+        <a href="romos.html" class="block px-4 py-2 hover:bg-[#E25010]">ROMOS</a>
+      </div>
+    </div>
 
   </div>
 </div>
+
+<!-- rest -->
           <a href="aboutus.html" class="text-[#E25010] font-bold transition">About Us</a>
           <a href="contactus.html" class="hover:text-[#E25010] transition">Contact Us</a>
         </div>
@@ -66,19 +102,42 @@
     <div id="mobile-menu" class="hidden md:hidden bg-[#1E1E1E]">
       <a href="index.html" class="block px-4 py-2 hover:text-[#E25010]">Home</a>
       
-      <!-- Products Dropdown -->
-      <div class="relative group">
-        <button class="block w-full text-left px-4 py-2 hover:text-[#E25010] transition focus:outline-none">
-          Products
-        </button>
-        <div class="hidden group-hover:flex flex-col bg-[#1E1E1E] text-white mt-1 rounded shadow-lg z-10">
-          <a href="AMR.html" class="block px-4 py-2 hover:bg-[#E25010]">AMR</a> 
-          <a href="ariyan.html" class="block px-4 py-2 hover:bg-[#E25010]">Ariyan</a>
-    <a href="romos.html" class="block px-4 py-2 hover:bg-[#E25010]">Romos</a>
-    <a href="tulip.html" class="block px-4 py-2 hover:bg-[#E25010]">Tulip</a>
-    <a href="ubot.html" class="block px-4 py-2 hover:bg-[#E25010]">Ubot</a>
-        </div>
+      <!-- Products Dropdown (Mobile) -->
+<div class="relative">
+  <button id="mobile-products-btn" class="block w-full text-left px-4 py-2 hover:text-[#E25010] transition focus:outline-none">
+    Products
+  </button>
+
+  <!-- Primary Dropdown -->
+  <div id="mobile-products-menu" class="hidden flex-col bg-[#1E1E1E] text-white mt-1 rounded shadow-lg z-10">
+    
+    <!-- Industrial Series -->
+    <div class="border-b border-gray-700">
+      <button class="w-full text-left px-4 py-2 hover:bg-[#E25010] flex justify-between items-center" onclick="toggleMenu('industrial')">
+        Industrial Series
+        <span id="icon-industrial">+</span>
+      </button>
+      <div id="submenu-industrial" class="hidden flex-col bg-[#242424]">
+        <a href="ubot.html" class="block px-6 py-2 hover:bg-[#E25010]">Ubot</a>
+        <a href="AMR.html" class="block px-6 py-2 hover:bg-[#E25010]">AMR</a>
       </div>
+    </div>
+
+    <!-- Educational Series -->
+    <div class="border-b border-gray-700">
+      <button class="w-full text-left px-4 py-2 hover:bg-[#E25010] flex justify-between items-center" onclick="toggleMenu('educational')">
+        Educational Series
+        <span id="icon-educational">+</span>
+      </button>
+      <div id="submenu-educational" class="hidden flex-col bg-[#242424]">
+        <a href="ariyan.html" class="block px-6 py-2 hover:bg-[#E25010]">Ariyan</a>
+        <a href="tulip.html" class="block px-6 py-2 hover:bg-[#E25010]">Tulip</a>
+        <a href="romos.html" class="block px-6 py-2 hover:bg-[#E25010]">Romos</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
       <a href="aboutus.html" class="block px-4 py-2 hover:text-[#E25010]">About Us</a>
       <a href="contactus.html" class="block px-4 py-2 hover:text-[#E25010]">Contact Us</a>
