@@ -29,3 +29,5 @@ const menuBtn = document.getElementById('menu-btn');
   document.getElementById("mobile-products-btn").addEventListener("click", () => {
     document.getElementById("mobile-products-menu").classList.toggle("hidden");
   });
+
+  
